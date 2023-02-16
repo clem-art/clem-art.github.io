@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="weatherForecast.js"></script>
+    <style>
+        body {
+            background-image: url(/image.png);
+            background-size: 100vw;
+            cursor: url(/Untitled_design__2_-removebg-pre.png), auto;
+            overflow-x: hidden;
+            margin-top: 0px;
+            margin-left: 0px;
+
+
+
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            scroll-snap-type: y mandatory;
+        }
+
+        input {
+            border-radius: 10px;
+            border: transparent;
+            box-shadow: 10px 10px 10px black;
+            margin-top: 20px;
+            height: 3vw;
+            width: 50vw;
+            margin-left: 25vw;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            text-align: center;
+            text-shadow: 1px 1px 1px black;
+            cursor: pointer;
+            transition: 0.3s linear;
+
+        }
+
+        ::placeholder {
+            color: rgb(0, 0, 0);
+            opacity: 0.2;
+        }
+
+        input:hover {
+            box-shadow: 3px 3px 3px aliceblue;
+            transform: scale(102%);
+
+        }
+
+        input:hover~.main {
+            filter: blur(8px);
+        }
+
+        div {
+            background-color: black;
+
+            text-align: center;
+            transition: 0.3s linear;
+
+
+        }
+
+        .main {
+            width: 100vw;
+            margin-top: 60px;
+            background-color: transparent;
+
+
+        }
+
+        p {
+            font-size: 30px;
+            color: aliceblue;
+            text-shadow: 2px 2px 2px black;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .div1 {
+            width: 350px;
+            height: 450px;
+            background-color: rgb(9, 9, 9);
+            opacity: 0.4;
+            filter: drop-shadow(5px 5px 5px rgb(241, 244, 244));
+            border-radius: 5px;
+
+
+
+        }
+
+        .div2 {
+            width: 350px;
+            height: 450px;
+            background-color: rgb(24, 23, 24);
+            filter: drop-shadow(5px 5px 5px rgb(241, 244, 244));
+            opacity: 0.3;
+            border-radius: 5px;
+        }
+
+        .div3 {
+            width: 350px;
+            height: 450px;
+            background-color: rgb(20, 19, 21);
+            filter: drop-shadow(5px 5px 5px rgb(241, 244, 244));
+            opacity: 0.3;
+            border-radius: 5px;
+        }
+
+
+
+        .bloc1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80vw;
+            margin-left: 10%;
+            background-color: transparent;
+        }
+
+        .div1:hover {
+            transform: scale(110%);
+            opacity: 0.8;
+            filter: drop-shadow(5px 5px 10px rgb(7, 7, 7));
+            border-radius: 20px;
+
+        }
+
+        .div2:hover {
+            transform: scale(110%);
+            opacity: 0.8;
+            filter: drop-shadow(5px 5px 10px rgb(7, 7, 7));
+            border-radius: 20px;
+        }
+
+        .div3:hover {
+            transform: scale(110%);
+            opacity: 0.8;
+            filter: drop-shadow(5px 5px 10px rgb(7, 7, 7));
+            border-radius: 20px;
+        }
+
+
+
+        header {
+            display: flex;
+            width: 100vw;
+            background-color: black;
+            position: fixed;
+
+        }
+
+        #logo {
+            width: 100px;
+
+        }
+
+        h2 {
+            font-weight: 800;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: aliceblue;
+            word-spacing: 5px;
+
+        }
+
+        ::-webkit-scrollbar {
+            background-color: rgba(92, 100, 109, 0.996);
+            opacity: 0.5;
+            width: 60px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-image: url(/Untitled_design-removebg-preview.png);
+            background-color: rgb(0, 0, 0);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+
+        .section1,
+        .section2,
+        .section3,
+        .section4,
+        .section5,
+        .section6,
+        .section7,
+        .section8 {
+            background-color: transparent;
+            margin-bottom: 50px;
+        }
+
+        p:nth-of-type(2) {
+            font-size: 30px;
+        }
+
+        p:nth-of-type(3) {
+            font-size: 27px;
+        }
+
+        p:nth-of-type(4) {
+            font-size: 20px;
+        }
+
+        p:nth-of-type(5) {
+            font-size: 15px;
+        }
+
+        p:nth-of-type(6) {
+            font-size: 20px;
+        }
+
+        p:nth-of-type(7) {
+            font-size: 15px;
+        }
+
+        p:nth-of-type(8) {
+            font-size: 15px;
+        }
+        @media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(15, 157, 204);
+  background-image: none;
+}
+section{
+    background-color: rgb(15, 157, 204);
+}
+input{
+    height: 40px;
+}
+::placeholder{
+    content: 'Ville';
+}
+
+}
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <img id="logo" src="/Untitled_design-removebg-preview.png" alt="weather forecast logo">
+        <h2>World Cities Weather Forecast (FR)</h2>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <input type="text" placeholder="Rentrez le nom d'une ville pour obtenir ses données météorologiques">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="main">
+        <div class="section1">
+            <div class="bloc1">
+                <div class="div1"></div>
+                <div class="div2"></div>
+                <div class="div3"></div>
+            </div>
+            <br>
+            <br>
+
+        </div>
+    </div>
+</body>
+
+</html>
