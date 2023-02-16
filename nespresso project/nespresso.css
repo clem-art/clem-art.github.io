@@ -1,0 +1,250 @@
+span:not(.asterix){
+    color: brown;
+}
+*{
+    cursor: url(/png-clipart-man-wearing-black-tu.png), auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+#logo2{
+    width: 50px;
+}
+h6{
+    font-size: 12px;
+    letter-spacing: normal;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+.copyrights{
+    margin-top: 10px;
+}
+.sns{
+    width: 16px;
+    padding-left: 10px;
+    padding-left: 10px;
+}
+.sn1{
+    width: 8px;
+    padding-left: 10px;
+    padding-left: 10px;
+}
+#submit{
+    background-color: #3d8705;
+    background-image: url(/png-transparent-espresso-machines-coffeemaker-nespresso-coffee-machine-electronics-kitchen-appliance-coffee.png);
+    font-size: 14px;
+    color: transparent;
+    letter-spacing: 1.16667px;
+    line-height: 0cm16.8px;
+    text-align: center;
+    padding: 11px 28px;
+    border: transparent;
+    margin-left: 770px;
+    margin-bottom: 20px;
+    background-size: 100% 100%;
+    height: 100px;
+    
+    
+}
+
+
+#yes:checked ~ #results{
+    display: block;
+}
+#results{
+    display: none;
+}
+#find{
+    margin-left: 80px;
+}
+#find, #private{
+    color: #986f38;
+    text-decoration: none;
+}
+td>p{
+    color: red;
+    margin-left: 80px;
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+.ul3>a{
+    color:#cccccc;
+}
+.ul4>a{
+    color: whitesmoke;
+    opacity: 0.5;
+}
+.footer1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-right: 20px;
+    background-color:#1b1b1b ;
+}
+#france{
+    width: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 25px;
+    margin-left: 30px;
+}
+.ul1,.ul2{
+    list-style: none;
+}
+.middle {
+    padding-top: 40px;
+    padding-left: 25px;
+    width: 965px;
+}
+th{
+    text-align: left;
+}
+.box{
+    height: 40px;
+    width: 260px;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    opacity: 0.5;
+    
+  
+   
+}
+select{
+    margin-top: 11px;
+    margin-bottom: 11px;
+    padding-left: 10px;
+    padding-right: 30px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    font-size: 14px;;
+}
+.ul1{
+    color: #cccccc;
+    margin-left: 50px;
+}
+.list{
+    display: flex;
+}
+body{
+    background-color: black;
+    background-image: url(/nespresso-george-clooney.webp);
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    padding: 238px;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    color:#656565 ;
+    font-size: 12px;
+    letter-spacing: 0.96px;
+    line-height: 18px;
+    min-width: 100%;
+   
+    
+}
+
+section{
+    background-color: whitesmoke;
+    
+}
+.last{
+    display: flex;
+    background-color: black;
+}
+#graydiv{
+    background-color: #cccccc;
+    padding: 10px;
+    font-size: 12px;
+    padding-left: 20px;
+    margin-left: -25px;
+    margin-bottom: 25px;
+    font-size: 900;
+    color: #1b1b1b;
+    
+}
+.phead{
+    font-weight: 900;
+}
+hr{
+    margin-left: -25px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+h2{
+    font-weight: 900;
+    color: #1b1b1b;
+}
+.section-one{
+    text-align: center;
+    padding-left: 220px;
+    padding-right: 220px;
+    padding-top: 5px;
+    margin-top: 10px;
+    width: 550px;
+    
+    
+}
+#logo{
+    width: 200px;
+    
+}
+#password{
+    color: #1b1b1b;
+    list-style: disc;
+    margin-left: 170px;
+    margin-bottom: 60px;
+}
+#legend{
+    margin-left: 180px; 
+}
+
+
+@media  screen and (max-width: 995px ) {
+    #logo{
+        width: 100px;
+    }
+    body{
+        background-color: #1b1b1b;
+    }
+    .box{
+       width: 450px;
+       margin-right: 200px;
+    }
+  .footer1{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+ 
+}
+@media  screen and (max-width: 498px ) {
+    #logo{
+        width: 100px;
+    }
+    body{
+        background-color: #1b1b1b;
+        
+    }
+    .box{
+       width: 500px;
+     
+    }
+  .footer1{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    th{
+        display: none;
+    }
+    
+ 
+}
+footer{
+    width: 990px;
+}
