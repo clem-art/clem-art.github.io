@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        h4 {
+
+            color: #393636;
+            font-size: 90px;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: -40px;
+            margin-left: -20px;
+            text-shadow: 5px 5px 5px #393636;
+
+
+        }
+
+        h1 {
+            color: rgb(7, 250, 254);
+        }
+
+        .cards {
+            background-color: #393636;
+            padding: 100px;
+            width: 10px;
+            height: 80px;
+            margin: 30px;
+            filter: drop-shadow(10px 10px #363939);
+            box-shadow: 10px 10px 10px rgb(13, 119, 120);
+            user-select: none;
+            border-radius: 10%;
+            z-index: 99;
+
+
+
+        }
+
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            /* filter: drop-shadow(2px 2px black); */
+            /* box-shadow: 10px 10px black; */
+            margin: 100px;
+            margin-left: 200px;
+            width: 1200px;
+            /* height: 8000px; */
+            /* width: 1100px; */
+            
+        }
+
+
+
+
+
+
+        span.pen {
+            position: relative;
+            display: inline-block;
+            animation: drop 0.75s;
+        }
+
+        canvas {
+            width: cover;
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            z-index:1;
+            margin-left: -800px;
+            margin-top: 250px;
+            background-color: transparent;
+           
+        }
+
+        @keyframes drop {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+
+            90% {
+                opacity: 1;
+                transform: translateY(10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        /* .cartetamere{
+            text-align: center;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Input Value</h1>
+    <input type="number" name="" id="num">
+    <canvas></canvas>
+
+
+    <script>
+{ //iiffe
+
+        let body = document.querySelector("body");
+
+
+
+        let h5 = document.createElement("h5");
+        body.appendChild(h5);
+        h5.textContent = "Will you reach your highest score today??";
+        h5.style.color = "aqua";
+        h5.style.fontWeight = "600";
+        h5.style.fontSize = "20px";
+
+
+        let container = document.createElement("div");
+        body.appendChild(container);
+        container.setAttribute("id", "container")
+        container.style.textShadow = "10px, 10px, black";
+
+
+        let inpute = document.querySelector("input");
+        inpute.addEventListener("change", addCards);
+
+        
+
+        function addCards() {
+            let randomNum = Math.floor(Math.random() * inpute.value);
+            console.log(randomNum);
+container.innerHTML = ""; //getting rid of the cards when adding a new value
+//TODO: get rid of the winner function as well
+            for (let i = 0; i < inpute.value; i++) {
+
+                let cards = document.createElement("div");
+                container.appendChild(cards);
+                cards.setAttribute("class", "cards");
+                cards.addEventListener("click", function () {
+                    cards.style.backgroundColor = "aqua";
+                })
+
+                let h4 = document.createElement("h4");
+                cards.appendChild(h4);
+                h4.textContent = "X";
+                h4.style.textAlign = 'center';
+            }
+
+
+            let cardss = document.querySelectorAll(".cards");
+            document.querySelector("cards");
+
+            console.log(cardss[0].textContent);
+
+            // if(randomNum == cardss[i]){
+            cardss[randomNum].textContent = "O";
+            cardss[randomNum].style.color = "#393636";
+            cardss[randomNum].style.fontWeight = "600";
+            cardss[randomNum].style.fontFamily = "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+            cardss[randomNum].style.fontSize = "90px";
+            cardss[randomNum].style.textShadow = "5px 5px 5px #393636";
+            /////////////////////////////////////
+            //////////firewurrrks///////////
+            /////////////////////////////////////
+            /////////////////////////////////////
+            cardss[randomNum].onclick = function () {
+                h5.textContent = "Damn! You nailed it brah";
+                // let canva = document.querySelector("canva");
+                // canva.style.display = "block";
+                // h5.textContent = `it took you ${tries}`;
+
+                var ctx = document.querySelector('canvas').getContext('2d')
+                ctx.canvas.width = window.innerWidth
+                ctx.canvas.height = window.innerHeight
+
+                var sparks = []
+                var fireworks = []
+                var i = 20; while (i--) {
+                    fireworks.push(
+                        new Firework(Math.random() * window.innerWidth, window.innerHeight * Math.random())
+                    )
+                }
+
+                render()
+                function render() {
+                    setTimeout(render, 1000 / 60)
+                    ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+                    ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height)
+                    for (var firework of fireworks) {
+                        if (firework.dead) continue
+                        firework.move()
+                        firework.draw()
+                    }
+                    for (var spark of sparks) {
+                        if (spark.dead) continue
+                        spark.move()
+                        spark.draw()
+                    }
+
+                    if (Math.random() < 0.05) {
+                        fireworks.push(new Firework())
+                    }
+                }
+
+                function Spark(x, y, color) {
+                    this.x = x
+                    this.y = y
+                    this.dir = Math.random() * (Math.PI * 2)
+                    this.dead = false
+                    this.color = color
+                    this.speed = Math.random() * 3 + 3;
+                    this.walker = new Walker({ radius: 20, speed: 0.25 })
+                    this.gravity = 0.25
+                    this.dur = this.speed / 0.1
+                    this.move = function () {
+                        this.dur--
+                        if (this.dur < 0) this.dead = true
+
+                        if (this.speed < 0) return
+                        if (this.speed > 0) this.speed -= 0.1
+                        var walk = this.walker.step()
+                        this.x += Math.cos(this.dir + walk) * this.speed
+                        this.y += Math.sin(this.dir + walk) * this.speed
+                        this.y += this.gravity
+                        this.gravity += 0.05
+
+                    }
+                    this.draw = function () {
+                        drawCircle(this.x, this.y, 3, this.color)
+                    }
+                }
+
+                function Firework(x, y) {
+                    this.xmove = new Walker({ radius: 10, speed: 0.5 })
+                    this.x = x || Math.random() * ctx.canvas.width
+                    this.y = y || ctx.canvas.height
+                    this.height = Math.random() * ctx.canvas.height / 2
+                    this.dead = false
+                    this.color = randomColor()
+
+                    this.move = function () {
+                        this.x += this.xmove.step()
+                        if (this.y > this.height) this.y -= 1;
+                        else this.burst()
+
+                    }
+                    this.draw = function () {
+                        drawCircle(this.x, this.y, 1, this.color)
+                    }
+                    this.burst = function () {
+                        this.dead = true
+                        var i = 100; while (i--) sparks.push(new Spark(this.x, this.y, this.color))
+                    }
+                }
+
+                function drawCircle(x, y, radius, color) {
+                    color = color || '#FFF'
+                    ctx.fillStyle = color
+                    ctx.fillRect(x - radius / 2, y - radius / 2, radius, radius)
+                }
+
+                function randomColor() {
+                    return ['#6ae5ab', '#88e3b2', '#36b89b', '#7bd7ec', '#66cbe1'][Math.floor(Math.random() * 5)];
+                }
+
+                function Walker(options) {
+                    this.step = function () {
+                        this.direction = Math.sign(this.target) * this.speed
+                        this.value += this.direction
+                        this.target
+                            ? this.target -= this.direction
+                            : (this.value)
+                                ? (this.wander)
+                                    ? this.target = this.newTarget()
+                                    : this.target = -this.value
+                                : this.target = this.newTarget()
+                        return this.direction
+                    }
+
+                    this.newTarget = function () {
+                        return Math.round(Math.random() * (this.radius * 2) - this.radius)
+                    }
+
+                    this.start = 0
+                    this.value = 0
+                    this.radius = options.radius
+                    this.target = this.newTarget()
+                    this.direction = Math.sign(this.target)
+                    this.wander = options.wander
+                    this.speed = options.speed || 1
+                }
+
+            };
+
+        }
+
+
+
+
+            // let img = document.createElement("img"); //create as many imgs as the length of the array of objects, add them to the divs
+            // div.appendChild(img);
+            // img.setAttribute("src", datas[i].image);
+
+
+
+
+
+//let tries - counter == 1 ? try : tries; to change the grammar
+
+    }
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+///button click appears

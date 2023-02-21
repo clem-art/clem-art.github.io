@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {}
+
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            /* filter: drop-shadow(2px 2px black); */
+            /* box-shadow: 10px 10px black; */
+            margin: 100px;
+            margin-left: 150px;
+            width: 1200px;
+
+
+        }
+
+        img {
+            border-radius: 10px;
+            filter: saturate(0);
+        }
+
+        .divs {
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px black;
+            transition: transform 0.3s ease-in-out;
+            border: 5px double #f7f7f7;
+
+
+
+        }
+
+        .divs:hover {
+            transform: scale(1.2);
+
+
+
+        }
+
+        .divs:hover img {
+            filter: saturate(1);
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 800;
+            background-color: rgb(5, 5, 4);
+            color: rgb(248, 248, 248);
+            text-align: center;
+            padding: 40px;
+            text-shadow: deepskyblue;
+            filter: drop-shadow(11px 5px 12px #000);
+        }
+
+        h4 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 800;
+            filter: drop-shadow(5px 3px 5px #393636);
+        }
+
+        #showmore {
+            background-color: #000;
+            border-radius: 44% 56% 70% 30% / 30% 30% 70% 70%;
+            padding: 30px;
+            position: fixed;
+            z-index: 5;
+            margin-left: 1030px;
+        }
+
+        #emoji {
+            text-align: center;
+            font-size: 30px;
+            text-shadow: 2px 2px rgb(182, 30, 78);
+        }
+
+        #showmoretext {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Prrrretty Gallery</h1>
+
+    <script>
+        const datas = [
+            {
+                image: "https://picsum.photos/id/274/200/200",
+                title: "Dog",
+                creator: "Jim Beam",
+                price: "$9.99",
+            },
+            {
+                image: "https://picsum.photos/id/238/200/200",
+                title: "City",
+                creator: "Jack Daniels",
+                price: "$6.50",
+            },
+            {
+                image: "https://picsum.photos/id/239/200/200",
+                title: "Dandelion",
+                creator: "Johnnie Walker",
+                price: "$19.00",
+            },
+            {
+                image: "https://picsum.photos/id/244/200/200",
+                title: "Pelicans",
+                creator: "John Jameson",
+                price: "$12.50",
+            },
+            {
+                image: "https://picsum.photos/id/248/200/200",
+                title: "Cactus",
+                creator: "Jim Beam",
+                price: "$15.99",
+            },
+            {
+                image: "https://picsum.photos/id/249/200/200",
+                title: "Bridge",
+                creator: "William Grant",
+                price: "$29.99",
+            },
+            {
+                image: "https://picsum.photos/id/250/200/200",
+                title: "Camera",
+                creator: "George Smith",
+                price: "$10.00",
+            },
+            {
+                image: "https://picsum.photos/id/251/200/200",
+                title: "Landscape",
+                creator: "Johnnie Walker",
+                price: "$29.00",
+            },
+            {
+                image: "https://picsum.photos/id/255/200/200",
+                title: "Private Drive",
+                creator: "John Jameson",
+                price: "$19.00",
+            },
+            {
+                image: "https://picsum.photos/id/256/200/200",
+                title: "Snowy Mountains",
+                creator: "William Grant",
+                price: "$19.99",
+            },
+            {
+                image: "https://picsum.photos/id/257/200/200",
+                title: "Canal",
+                creator: "Jim Beam",
+                price: "$19.99",
+            },
+            {
+                image: "https://picsum.photos/id/258/200/200",
+                title: "Birds",
+                creator: "Johnnie Walker",
+                price: "$24.00",
+            },
+            {
+                image: "https://picsum.photos/id/259/200/200",
+                title: "Waterfront",
+                creator: "George Smith",
+                price: "$15.00",
+            },
+            {
+                image: "https://picsum.photos/id/261/200/200",
+                title: "Dune",
+                creator: "John Jameson",
+                price: "$7.50",
+            },
+            {
+                image: "https://picsum.photos/id/274/200/200",
+                title: "City Night",
+                creator: "Jim Beam",
+                price: "$14.99",
+            },
+        ];
+        let body = document.querySelector("body");
+
+        let container = document.createElement("div");
+        body.appendChild(container);
+        container.setAttribute("id", "container")
+        container.style.textShadow = "10px, 10px, black";
+
+        const displayNum = 3;
+        let start = 0;
+
+const addCards = () => {
+        for (let i = start; i < start + displayNum; i++) {
+
+            let div = document.createElement("div");    //create as many divs as the length of the array of objects
+            container.appendChild(div);
+            div.setAttribute("class", "divs")
+
+
+            let img = document.createElement("img"); //create as many imgs as the length of the array of objects, add them to the divs
+            div.appendChild(img);
+            img.setAttribute("src", datas[i].image);
+            let h4 = document.createElement("h4");
+            div.appendChild(h4);
+            h4.textContent = datas[i].title;
+            h4.style.textAlign = 'center';
+            
+
+            
+        }
+    }
+addCards();
+            ///////////////div.innerHTML = `....
+
+            // let hover = div.addEventListener("mouseover", function () {
+            //     div.style.transform = 'scale(1)';
+            // });
+
+        
+
+
+        let showmore = document.createElement("div");
+        body.appendChild(showmore);
+        console.log(showmore);
+        showmore.setAttribute("class", "divs");
+        showmore.setAttribute("id", "showmore");
+        showmore.addEventListener("click", function() {
+            console.log("blabla");
+            start += 3;
+            addCards();
+        });
+
+
+        container.insertBefore(showmore, container.lastElementChild);
+
+
+        ///////////////////////////////////////////////////////////////////
+        let showmoretext = document.createElement("h4");
+        showmore.appendChild(showmoretext);
+        showmoretext.setAttribute("id", "showmoretext");
+        showmoretext.textContent = "Show me wat ya got";
+
+
+        let emoji = document.createElement("p");
+        showmore.appendChild(emoji);
+        emoji.setAttribute("id", "emoji");
+        emoji.textContent = "+";
+        emoji.style.color = 'white';
+        emoji.style.fontWeight = '800';
+        emoji.addEventListener("click", function () {
+
+        })
+
+    </script>
+</body>
+
+</html>
