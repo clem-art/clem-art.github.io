@@ -1,11 +1,11 @@
 body {
-  background-image: url(form validation 2/assets/liege.jpg);
+  background-image: url(/form validation 2/assets/liege.jpg);
   background-size: cover;
   animation: 0.5s blurin;
 }
 /* select the parent element with :has*/
 body:has(form:hover) {
-    background-image: url(form validation 2/assets/background.jpg);
+    background-image: url(/form validation 2/assets/background.jpg);
     transition: linear;
     animation: 1s blurout;
 }
@@ -216,7 +216,7 @@ form::-webkit-scrollbar-thumb{
 }
 
 form:hover body{
-    background-image: url(form validation 2/assets/background.jpg);
+    background-image: url(/form validation 2/assets/background.jpg);
 }
 #reset {
   background-color: greenyellow;
