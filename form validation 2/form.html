@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="form.js"></script>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+   
+    <form>
+     
+      <h1>Fill in the form</h1>
+      <input id="reset" type="reset" value="Reset" class="hvr-float-shadow" />
+      <br /><br />
+      <label id="gender">Gender</label>
+      <div id="genderBox">
+        <p class="genderLetter">F</p>
+        <input type="radio" name="gender" value="F" checked />
+        <p class="genderLetter">M</p>
+        <input type="radio" name="gender" value="M" />
+      </div>
+      <br />
+
+      <label class="hvr-backward">Last name</label>
+      <input type="text" id="lastName" />
+      <p id="minimum2one">minimum 2 characters</p>
+
+      <label class="hvr-backward">First name</label
+      ><input type="text" id="firstName" />
+      <p id="minimum2two">minimum 2 characters</p>
+
+      <label class="hvr-backward">Age</label><input type="number" id="age" />
+      <p id="between">between 5 and 140</p>
+      <label class="hvr-backward">Login</label
+
+      ><input type="text" id="login" autocomplete="username" />
+      <p id="minimum4">minimum 4 characters</p>
+
+      <label class="hvr-backward">Password</label
+      ><input type="password" id="pwd" autocomplete="new-password" />
+      <p id="minimum6">minimum 6 characters</p>
+      <label class="hvr-backward">Password confirmation</label
+      ><input type="password" id="pwdConfirm" autocomplete="new-password" />
+      <p id="identical">not identical to the password</p>
+      <label id="countryLabel" class="hvr-backward">Country</label>
+      <select required id="selectCountry">
+        <option disabled selected value="">Select a country</option> 
+        <!-- get it invalid when value empty strings -->
+        <optgroup label="Choose your country of origin">
+          <option value="option1">South Korea</option>
+          <option value="option2">USA</option>
+          <option value="option3">France</option>
+        </optgroup>
+      </select>
+      <p id="country">Select one country</p>
+      <br />
+      <fieldset class="hvr-underline-from-center hvr-buzz">
+        <legend>Register to our newsletter</legend>
+        <div id="newsletter">
+          <label>Newsletter</label>
+          <input id="Newscheckbox" class="hvr-buzz" type="checkbox" />
+        </div>
+      </fieldset>
+      <br /><br />
+      <input class="hvr-float-shadow" type="submit" id="submit"></input>
+    </form>
+    <img id="pin" src="/assets/pin.png" alt="pin">
+  </body>
+</html>
