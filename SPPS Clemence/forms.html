@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="#" method="POST">
+        <p>
+        <label for="first-name">First Name:</label>&nbsp;&nbsp;
+ <input type="text" name="firstName" id="first-name" placeholder="Clem..." autofocus>
+
+</p>
+<p>
+ <label for="age">Age :</label>&nbsp;&nbsp;
+ <input type="number" min="0" max="99" value="7" maxlength="2"> 
+ </p>
+ <p>
+    <label for="password">Password :</label>&nbsp;&nbsp;
+    <input type="password" min="0" max="99" value="x-8Cvd41" maxlength="8" required> 
+    </p>
+
+
+    <p>
+        <label for="phone">Phone Number :</label>&nbsp;&nbsp;
+        <select name="country" id="" maxlength="2"> 
+
+<optgroup label="Europe">
+            <option value="GR">GR (+30)</option>
+            <option value="France">FR (+32)</option>
+            <option value="UK">UK (+44)</option>
+            <option value="France">DE (+49)</option>
+            
+           </optgroup>
+
+           <optgroup label="Asia">
+            <option value="Korea">KO (+82)</option>
+            <option value="France">FR (+32)</option>
+            <option value="USA">USA (+1)</option>
+            <option value="Korea">UK (+44)</option>
+           </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="description">Tell us about yourself :</label>&nbsp;&nbsp;
+            <br>
+            <br>
+            <textarea name="description" id="description" cols="30" rows="10" placeholder="I am...">My name is...</textarea>
+        </p>
+        
+        <p>
+           <label>Gender</label> :&nbsp;&nbsp;
+            <label for="male">Male</label>&nbsp;&nbsp;
+            <input type="radio" name="gender" id="male" value="male"> 
+            <label for="female">Female</label>&nbsp;&nbsp;
+            <input type="radio" name="gender" id="female" value="female"> 
+            
+</p>
+<p>
+            
+            <input type="checkbox" name="termsOfUse" id="termsOfUse"> 
+            <label for="termsOfUse">Do you agree to the Terms of Use</label>
+            <br>
+            <input type="checkbox" name="newsletter" id="newsletter"> 
+            <label for="newsletter">Sign me up for the newsletter</label>
+        </p>
+<br>
+        <input id="submit" type="submit" value="Register Now">
+    </form>
+
+
+    <!-- camel case or snake case for name
+    first_name -->
+
+    <!-- label and input inline elements -->
+</body>
+</html>

@@ -1,0 +1,166 @@
+var site_host = location.protocol + "//" + location.host;
+
+//아이디 특수문자 유효성
+function chkTxt(str){
+	var reg_txt = /^[a-z0-9_-]{0,100}$/;
+	if(!reg_txt.test(str)){
+		  return false;
+	}
+	return true;
+}
+
+//아이디 영문/숫자조합
+function chkTxt2(str){
+	var reg_txt = /^.*(?=.{4,16})(?=.*[0-9])(?=.*[a-zA-Z]).*$/;
+	if(!reg_txt.test(str)){
+		  return false;
+	}
+	return true;
+}
+
+function chkEmail(str) {
+	var reg_txt = /([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+	if(!reg_txt.test(str)){
+		  return false;
+	}
+	return true;
+}
+
+
+//ID 체크
+function id_check(){
+	var f = document.join_form;
+	if(f.userid1.value=="") {
+		alert("아이디를 입력해 주세요.");
+		$("#id_check").empty();
+		f.userid1.focus();
+		f.userid1.focus();
+	}else if(!chkTxt($.trim(f.userid1.value))){ 
+		alert("한글,특수문자,영문(대문자)는 사용 할 수 없습니다.");    
+		$("#id_check").empty();
+		f.userid1.focus();
+
+	}else if(f.userid2.value=="") {
+		alert("아이디를 입력해 주세요.");
+		$("#id_check").empty();
+		f.userid2.focus();
+		f.userid2.focus();
+	} else {
+
+		var userid = f.userid1.value+"@"+f.userid2.value;
+		if(!chkEmail(userid)){
+			alert("이메일형식을 확인해주시기 바랍니다..");
+			$("#id_check").empty();
+		}else{
+			$.ajax({
+				url : site_host+"/form/join_idcheck.php",
+				type: "get",
+				data:	 {"userid": userid}, 
+				success:function(obj){ 
+					$("#id_check").html(obj);
+				}
+			});
+		}
+
+	}
+}
+
+//비밀번호 유효성
+function chkPwd(str){
+	var pw = str;
+	var num = pw.search(/[0-9]/g);
+	var eng = pw.search(/[a-z]/ig);
+	var spe = pw.search(/[`~!@@#$%^&*|₩₩₩'₩";:₩/?]/gi);
+
+		if(pw.length < 4 || pw.length > 16){
+			alert("비밀번호는 4~16자의 영문,숫자,특수문자 조합으로 가능합니다.");
+			return false;
+		}
+		if(pw.search(/₩s/) != -1){
+			alert("비밀번호는 공백없이 입력해주세요.");
+			return false;
+		}
+		if(num < 0 || eng < 0){
+			alert("영문,숫자를 조합하여 입력해주세요.");
+			return false;
+		}
+	 return true;
+}
+
+//우편번호
+function openDaumPostcode() {
+	new daum.Postcode({
+		oncomplete: function(data) {
+			$("input[name='zip_new']").val(data.zonecode);
+			$("input[name='add1']").val(data.address);
+			$("input[name='add2']").focus();
+		}
+	}).open();
+}
+
+/*iframe 주소록*/
+function closePostcode_m() {
+	element_layer.style.display = 'none';
+}
+
+function openDaumPostcode_m() {
+	new daum.Postcode({
+		oncomplete: function(data) {
+			var fullAddr = data.address;
+			var extraAddr = '';
+
+			if(data.addressType === 'R'){
+				if(data.bname !== ''){
+					extraAddr += data.bname;
+				}
+				if(data.buildingName !== ''){
+					extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+				}
+				fullAddr += (extraAddr !== '' ? ' ('+ extraAddr +')' : '');
+			}
+
+			$("input[name='zip_new']").val(data.zonecode);
+			$("input[name='add1']").val(data.address);
+			$("input[name='add1']").focus();
+
+			element_layer.style.display = 'none';
+		},
+		width : '100%',
+		height : '100%'
+	}).embed(element_layer);
+
+	element_layer.style.display = 'block';
+	initLayerPosition();
+}
+
+function initLayerPosition(){
+	var width = 300;
+	var height = 460;
+	var borderWidth = 5;
+
+	element_layer.style.width = width + 'px';
+	element_layer.style.height = height + 'px';
+	element_layer.style.border = borderWidth + 'px solid';
+	element_layer.style.left = (((window.innerWidth || document.documentElement.clientWidth) - width)/2 - borderWidth) + 'px';
+	element_layer.style.top = (((window.innerHeight || document.documentElement.clientHeight) - height)/2 - borderWidth) + 'px';
+}
+
+$(function(){
+
+	$('input[name=passwd]').keyup(function(){
+		var pw = this.value;
+		var num = pw.search(/[0-9]/g);
+		var eng = pw.search(/[a-z]/ig);
+
+		if(pw.length >= 4){
+			if( (pw.length < 4 || pw.length > 16) || (pw.search(/₩s/) != -1) || (num < 0 || eng < 0) ){
+				$("#passwd_check").html('<strong class="font-caution">비밀번호가 정확하지 않습니다. 다시한번 입력해주세요. </strong>');
+				return false;
+			}else{
+				$("#passwd_check").empty();
+			}
+		}
+		return true;
+	});
+
+});

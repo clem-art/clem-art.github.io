@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1 {
+        background-color: deepskyblue;
+        width: 100px;
+        height: 100px;
+        z-index: 2;
+        position: absolute;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px rgb(110, 105, 108);
+        border: 3px dashed deeppink;
+      }
+
+      #div2 {
+        background-color: deeppink;
+        width: 100px;
+        height: 100px;
+        z-index: 2;
+        position: absolute;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px rgb(92, 93, 94);
+        border: 3px dashed deepskyblue;
+      }
+
+      #div3 {
+        background-color: deepskyblue;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        z-index: 2;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px rgb(111, 111, 110);
+        border: 3px dashed rgb(255, 21, 0);
+      }
+      #div4 {
+        background-color: deeppink;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        z-index: 2;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px rgb(84, 82, 82);
+        border: 3px dashed rgb(251, 255, 0);
+      }
+      #target1 {
+        background-color: transparent;
+        width: 115px;
+        height: 115px;
+        position: absolute;
+        margin-left: 404px;
+        z-index: 1;
+        margin-top: 31px;
+        border-radius: 50%;
+        border: 3px solid red;
+      }
+
+      #target2 {
+        background-color: transparent;
+        width: 105px;
+        height: 105px;
+        position: absolute;
+        margin-left: 516px;
+        z-index: 1;
+        margin-top: 31px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+      }
+      #target3 {
+        background-color: transparent;
+        width: 105px;
+        height: 105px;
+        position: absolute;
+        margin-left: 628px;
+        z-index: 1;
+        margin-top: 31px;
+        border-radius: 50%;
+      }
+      #target4 {
+        background-color: transparent;
+        width: 105px;
+        height: 105px;
+        position: absolute;
+        margin-left: 746px;
+        z-index: 1;
+        margin-top: 31px;
+        border-radius: 50%;
+      }
+      body {
+        margin: 0;
+        background-color: black;
+        background-image: url(/play\ for\ free.png);
+        background-size: 100%;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      img {
+        margin-top: 30px;
+        margin-left: 400px;
+        width: 800px;
+      }
+      h1,
+      h2 {
+        position: absolute;
+        color: aliceblue;
+      }
+      h1 {
+        top: 150px;
+      }
+      h2 {
+        top: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Puissance 5</h1>
+    <br />
+    <h2>
+      drag the first player's coins on the left <br />and the second player's
+      ones on the right.<br />
+      Then take turns to place the coins. <br />The first to reach 5 aligned
+      coins wins!
+    </h2>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+
+    <div id="target1"></div>
+    <div id="target2"></div>
+    <div id="target3"></div>
+    <div id="target4"></div>
+    <img src="/grille-removebg-preview.png" />
+    <script>
+      let body = document.querySelector("body");
+      let div1 = document.querySelector("#div1");
+      let div2 = document.querySelector("#div2");
+      let div3 = document.querySelector("#div3");
+      let div4 = document.querySelector("#div4");
+      let target1 = document.querySelector("#target1");
+      let target2 = document.querySelector("#target2");
+
+      //each div is a coin and each target is a hole in the grid
+
+      div1.offsetTop = 0;
+      div1.offsetLeft = 0;
+
+      div2.offsetTop = 0;
+      div2.offsetLeft = 0;
+
+      div3.offsetTop = 0;
+      div3.offsetLeft = 0;
+
+      div4.offsetTop = 0;
+      div4.offsetLeft = 0;
+
+      let shiftLeft;
+      let shiftTop;
+
+      //isMouseDown allows keyup
+      let div1isMouseDown = false;
+      div1.addEventListener("mousedown", function (e) {
+        div1.style.cursor = "pointer";
+        div1isMouseDown = true;
+        e.clientX = div1;
+        e.clientY = div1;
+        shiftLeft = e.clientX - div1.offsetLeft;
+        shiftTop = e.clientY - div1.offsetTop;
+
+        document.addEventListener("mousemove", function (e) {
+          if (!div1isMouseDown) return;
+          div1.style.top = e.clientY - shiftTop + "px";
+          div1.style.left = e.clientX - shiftLeft + "px";
+        });
+
+        div1.addEventListener("mouseup", function () {
+          //    document.onmousemove = null;
+          div1isMouseDown = false;
+
+          let bTop = div1.offsetTop;
+          let bLeft = div1.offsetLeft;
+          let bRight = bLeft + div1.offsetWidth;
+          let bBottom = bTop + div1.offsetHeight;
+
+          let tTop = target1.offsetTop;
+          let tLeft = target1.offsetLeft;
+          let tRight = tLeft + target1.offsetWidth;
+          let tBottom = tTop + target1.offsetHeight;
+
+          if (
+            bTop > tTop &&
+            bBottom < tBottom &&
+            bLeft > tLeft &&
+            bRight < tRight
+          ) {
+            target1.style.backgroundColor = "deepskyblue";
+            div1.style.display = "none";
+            console.log("blop");
+          }
+        });
+      });
+
+      let div2isMouseDown = false;
+      div2.addEventListener("mousedown", function (e) {
+        div2.style.cursor = "pointer";
+        div2isMouseDown = true;
+        e.clientX = div2;
+        e.clientY = div2;
+        shiftLeft = e.clientX - div2.offsetLeft;
+        shiftTop = e.clientY - div2.offsetTop;
+
+        document.addEventListener("mousemove", function (e) {
+          if (!div2isMouseDown) return;
+          div2.style.top = e.clientY - shiftTop + "px";
+          div2.style.left = e.clientX - shiftLeft + "px";
+        });
+
+        div2.addEventListener("mouseup", function () {
+          //    document.onmousemove = null;
+          div2isMouseDown = false;
+
+          //connect the coin with the target
+          let bTop2 = div2.offsetTop;
+          let bLeft2 = div2.offsetLeft;
+          let bRight2 = bLeft2 + div2.offsetWidth;
+          let bBottom2 = bTop2 + div2.offsetHeight;
+
+          let tTop2 = target2.offsetTop;
+          let tLeft2 = target2.offsetLeft;
+          let tRight2 = tLeft2 + target2.offsetWidth;
+          let tBottom2 = tTop2 + target2.offsetHeight;
+
+          if (
+            bTop2 > tTop2 &&
+            bBottom2 < tBottom2 &&
+            bLeft2 > tLeft2 &&
+            bRight2 < tRight2
+          ) {
+            target2.style.backgroundColor = "deeppink";
+            div2.style.display = "none";
+            console.log("blup");
+          }
+
+          let bTop = div2.offsetTop;
+          let bLeft = div2.offsetLeft;
+          let bRight = bLeft + div2.offsetWidth;
+          let bBottom = bTop + div2.offsetHeight;
+
+          let tTop = target1.offsetTop;
+          let tLeft = target1.offsetLeft;
+          let tRight = tLeft + target1.offsetWidth;
+          let tBottom = tTop + target1.offsetHeight;
+
+          if (
+            bTop > tTop &&
+            bBottom < tBottom &&
+            bLeft > tLeft &&
+            bRight < tRight
+          ) {
+            target1.style.backgroundColor = "deeppink";
+            div2.style.display = "none";
+            console.log("blop");
+          }
+        });
+      });
+
+      let div3isMouseDown = false;
+      div3.addEventListener("mousedown", function (e) {
+        div3.style.cursor = "pointer";
+        div3isMouseDown = true;
+        e.clientX = div3;
+        e.clientY = div3;
+        shiftLeft = e.clientX - div3.offsetLeft;
+        shiftTop = e.clientY - div3.offsetTop;
+
+        document.addEventListener("mousemove", function (e) {
+          if (!div3isMouseDown) return;
+          div3.style.top = e.clientY - shiftTop + "px";
+          div3.style.left = e.clientX - shiftLeft + "px";
+        });
+
+        div3.addEventListener("mouseup", function () {
+          //    document.onmousemove = null;
+          div3isMouseDown = false;
+        });
+      });
+
+      let div4isMouseDown = false;
+      div4.addEventListener("mousedown", function (e) {
+        div4.style.cursor = "pointer";
+        div4isMouseDown = true;
+        e.clientX = div4;
+        e.clientY = div4;
+        shiftLeft = e.clientX - div4.offsetLeft;
+        shiftTop = e.clientY - div4.offsetTop;
+
+        document.addEventListener("mousemove", function (e) {
+          if (!div4isMouseDown) return;
+          div4.style.top = e.clientY - shiftTop + "px";
+          div4.style.left = e.clientX - shiftLeft + "px";
+        });
+
+        div4.addEventListener("mouseup", function () {
+          //    document.onmousemove = null;
+          div4isMouseDown = false;
+        });
+      });
+    </script>
+  </body>
+</html>
+
+//TODO: make 2 coins select same target DONE, now make loop create 42 coins +
+every target gets selected by every coin

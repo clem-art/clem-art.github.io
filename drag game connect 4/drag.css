@@ -1,0 +1,965 @@
+#div1 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+
+#div2 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(92, 93, 94);
+  border: 3px dashed deepskyblue;
+  color: white;
+}
+
+#div3 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(111, 111, 110);
+  border: 3px dashed rgb(255, 21, 0);
+  color: white;
+}
+#div4 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(84, 82, 82);
+  border: 3px dashed rgb(251, 255, 0);
+  color: white;
+}
+#div5 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div6 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div7 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div8 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div9 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div10 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div11 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div12 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div13 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div14 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div15 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div16 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div17 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div18 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div19 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div20 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div21 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div22 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div23 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div24 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div25 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div26 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div27 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div28 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div29 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div30 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div31 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div32 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div33 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div34 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div35 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div36 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div37 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div38 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div39 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div40 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div41 {
+  background-color: deepskyblue;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  color: white;
+}
+#div42 {
+  background-color: deeppink;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgb(110, 105, 108);
+  border: 3px dashed deeppink;
+  font-size: 30px;
+  color: white;
+  /* margin-top: 600px; */
+}
+
+#target1 {
+  background-color: transparent;
+  width: 115px;
+  height: 115px;
+  position: absolute;
+  margin-left: 404px;
+  z-index: 1;
+  margin-top: 31px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+}
+
+#target2 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 516px;
+  z-index: 1;
+  margin-top: 31px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+}
+#target3 {
+  background-color: transparent;
+  width: 109px;
+  height: 109px;
+  position: absolute;
+  margin-left: 628px;
+  z-index: 1;
+  margin-top: 31px;
+  border-radius: 50%;
+}
+#target4 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 746px;
+  z-index: 1;
+  margin-top: 31px;
+  border-radius: 50%;
+}
+#target5 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 860px;
+  z-index: 1;
+  margin-top: 31px;
+  border-radius: 50%;
+}
+#target6 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 980px;
+  z-index: 1;
+  margin-top: 31px;
+  border-radius: 50%;
+}
+
+/*second row from left to right*/
+#target7 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 1100px;
+  z-index: 1;
+  margin-top: 31px;
+  border-radius: 50%;
+}
+#target8 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 400px;
+  z-index: 1;
+  margin-top: 151px;
+  border-radius: 50%;
+}
+#target9 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 520px;
+  z-index: 1;
+  margin-top: 151px;
+  border-radius: 50%;
+}
+#target10 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 630px;
+  z-index: 1;
+  margin-top: 151px;
+  border-radius: 50%;
+}
+#target11 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 740px;
+  z-index: 1;
+  margin-top: 151px;
+  border-radius: 50%;
+}
+#target12 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 850px;
+  z-index: 1;
+  margin-top: 151px;
+  border-radius: 50%;
+}
+#target13 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 980px;
+  z-index: 1;
+  margin-top: 151px;
+  border-radius: 50%;
+}
+#target14 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 1100px;
+  z-index: 1;
+  margin-top: 151px;
+  border-radius: 50%;
+}
+#target15 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 400px;
+  z-index: 1;
+  margin-top: 261px;
+  border-radius: 50%;
+}
+#target16 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 515px;
+  z-index: 1;
+  margin-top: 261px;
+  border-radius: 50%;
+}
+#target17 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 630px;
+  z-index: 1;
+  margin-top: 261px;
+  border-radius: 50%;
+}
+#target18 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 740px;
+  z-index: 1;
+  margin-top: 261px;
+  border-radius: 50%;
+}
+#target19 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 850px;
+  z-index: 1;
+  margin-top: 261px;
+  border-radius: 50%;
+}
+#target20 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 960px;
+  z-index: 1;
+  margin-top: 261px;
+  border-radius: 50%;
+}
+#target21 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 1080px;
+  z-index: 1;
+  margin-top: 261px;
+  border-radius: 50%;
+}
+/* 4th row of coins */
+#target22 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 400px;
+  z-index: 1;
+  margin-top: 371px;
+  border-radius: 50%;
+}
+#target23 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 515px;
+  z-index: 1;
+  margin-top: 371px;
+  border-radius: 50%;
+}
+#target24 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 630px;
+  z-index: 1;
+  margin-top: 371px;
+  border-radius: 50%;
+}
+#target25 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 740px;
+  z-index: 1;
+  margin-top: 371px;
+  border-radius: 50%;
+}
+#target26 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 850px;
+  z-index: 1;
+  margin-top: 371px;
+  border-radius: 50%;
+}
+#target27 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 960px;
+  z-index: 1;
+  margin-top: 371px;
+  border-radius: 50%;
+}
+#target28 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 1080px;
+  z-index: 1;
+  margin-top: 371px;
+  border-radius: 50%;
+}
+/* 5th row of coins */
+#target29 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 400px;
+  z-index: 1;
+  margin-top: 491px;
+  border-radius: 50%;
+}
+#target30 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 515px;
+  z-index: 1;
+  margin-top: 491px;
+  border-radius: 50%;
+}
+#target31 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 630px;
+  z-index: 1;
+  margin-top: 491px;
+  border-radius: 50%;
+}
+#target32 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 740px;
+  z-index: 1;
+  margin-top: 491px;
+  border-radius: 50%;
+}
+#target33 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 850px;
+  z-index: 1;
+  margin-top: 491px;
+  border-radius: 50%;
+}
+#target34 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 960px;
+  z-index: 1;
+  margin-top: 491px;
+  border-radius: 50%;
+}
+#target35 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 1080px;
+  z-index: 1;
+  margin-top: 491px;
+  border-radius: 50%;
+}
+/* 6th row of coins */
+
+#target36 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 400px;
+  z-index: 1;
+  margin-top: 600px;
+  border-radius: 50%;
+}
+#target37 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 515px;
+  z-index: 1;
+  margin-top: 600px;
+  border-radius: 50%;
+}
+#target38 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 630px;
+  z-index: 1;
+  margin-top: 600px;
+  border-radius: 50%;
+}
+#target39 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 740px;
+  z-index: 1;
+  margin-top: 600px;
+  border-radius: 50%;
+}
+#target40 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 850px;
+  z-index: 1;
+  margin-top: 600px;
+  border-radius: 50%;
+}
+#target41 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 960px;
+  z-index: 1;
+  margin-top: 600px;
+  border-radius: 50%;
+}
+#target42 {
+  background-color: transparent;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  margin-left: 1080px;
+  z-index: 1;
+  margin-top: 600px;
+  border-radius: 50%;
+  /*  */
+}
+/*TODO: add more targets until 42*/
+body {
+  margin: 0;
+  background-color: black;
+  background-image: url(play\ for\ free.png);
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+#player2Box {
+  height: 674px;
+  width: 200px;
+  border: 6px dotted deepskyblue;
+  background-color: deeppink;
+  opacity: 0.5;
+  margin-top: -688px;
+  margin-left: 200px;
+  filter: blur(8px);
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+}
+
+#player1Box {
+  height: 674px;
+  width: 200px;
+  border: 6px dotted deeppink;
+  background-color: deepskyblue;
+  opacity: 0.4;
+  margin-top: -688px;
+  margin-left: 1200px;
+  filter: blur(8px);
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+}
+
+img {
+  margin-top: 30px;
+  margin-left: 400px;
+  width: 800px;
+  filter: blur(8px);
+}
+h1,
+h2 {
+  position: absolute;
+  color: aliceblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  z-index: 90;
+  margin-top: 100px;
+}
+h1 {
+  top: 60px;
+  font-size: 100px;
+  text-shadow: 2px 2px 2px deeppink;
+  margin-left: 500px;
+}
+h2 {
+  top: 220px;
+  text-shadow: 2px 2px 2px deepskyblue;
+  margin-left: 370px;
+  font-size: 40px;
+}

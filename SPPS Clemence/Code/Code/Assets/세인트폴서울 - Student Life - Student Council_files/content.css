@@ -1,0 +1,875 @@
+@charset "utf-8";
+/* *******************************************************
+ * filename : content.css
+ * description : 서브페이지 컨텐츠 CSS
+ * date : 2018-01-16
+******************************************************** */
+
+#datepicker .ui-state-default {cursor:default;}
+/* ******************  School Vision ********************** */
+.vision-content {background:url("/images/content/about_bg.png") no-repeat right bottom;}
+
+.sub-txt-bx {margin-bottom: 35px;}
+.sub-txt-bx h3 {font-size:26px; letter-spacing: -0.25px; color:#333333; font-weight: 600; margin-bottom: 25px;}
+.sub-txt-bx p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#474747}
+.sub-txt-bx p span {color:#07357f}
+
+.sub-line-list {padding-bottom: 10px;}
+.sub-line-list p {padding-left: 20px; position:relative; font-size:13px; line-height: 22px; letter-spacing: -0.1px; color:#585858; font-weight: 300; padding-bottom: 35px;}
+.sub-line-list p::after {content:""; position:absolute; left:0; top:5px; width:3px; height:13px; background-color:#073784; }
+.sub-line-list p::before {content:""; position:absolute; width:1px; height:100%; left:0; top:5px; background-color:#E7E7E7}
+
+.vision-list {margin-bottom: 55px;}
+.vision-list ul li {float:left; width:16%; text-align:center; margin-left: 5%}
+.vision-list ul li:first-child {margin-left: 0;}
+.vision-list ul li img {max-width:100%;}
+.vision-list ul li p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#474747; font-style: italic; font-weight: 600; margin-top: 15px;}
+
+@media all and (max-width:1280px){
+	.vision-list {margin-bottom: 38.5px;}
+}
+
+@media all and (max-width:800px){
+	
+	.sub-txt-bx {margin-bottom: 15px;}
+	.sub-txt-bx h3 {font-size:16px; margin-bottom: 10px;}
+	.sub-txt-bx p {font-size:13px; line-height: 20px;}
+	.sub-line-list p {padding-left: 10px; font-size:13px; line-height: 20px; padding-bottom: 15px;}
+	.sub-line-list p::after  {top:3px; height:9px;}
+	.sub-line-list p::before {top:3px;}
+
+	.vision-list {margin-bottom: 20px;}
+	.vision-list ul li p {font-size:12px; line-height: 16px; margin-top: 7px;}
+}
+
+@media all and (max-width:480px){
+	.vision-content {background-size:70% auto}
+	.vision-list ul {text-align:center;}
+	.vision-list ul li {display:inline-block; float:none; width:30%; margin-left: 0; margin-bottom: 10px;}
+	.vision-list ul li img {max-width:90%;}
+}
+
+
+/* ******************  Head Master's Message ********************** */
+.head-content {padding-bottom: 200px; background:url("/images/content/head_bg.png") no-repeat center bottom;}
+.head-content h3 {font-size:26px; line-height: 34px; letter-spacing: -0.25px; color:#333333; font-weight: 400; margin-bottom: 15px;}
+.head-content h3 span {font-size:36px; line-height: 45px; letter-spacing: -0.25px; color:#073784; display:inline-block; margin-bottom: 20px;}
+.head-content p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#656565}
+.head-content .sign {font-size:15px; line-height: 21px; letter-spacing: -0.1px; color:#454545; font-weight: 600; margin-top: 24px;}
+
+@media all and (max-width:1280px){
+	.head-content {padding-bottom: 140px;}
+	.head-content .sign {margin-top: 42px;}
+}
+
+@media all and (max-width:800px){
+	head-content {padding-bottom: 65px;}
+	.head-content h3 {font-size:16px; line-height: 22px; margin-bottom: 7px;}
+	.head-content h3 span {font-size:19px; line-height: 24px; margin-bottom: 10px;}
+	.head-content p {font-size:13px; line-height: 20px;}
+	.head-content .sign {font-size:12px; line-height: 16px; margin-top: 20px;}
+}
+
+/* ******************  Accreditations  ********************** */
+.accreditation-tit h3 {font-size:22px; line-height: 60px; letter-spacing: -0.25px; color:#333333}
+.accreditation-list ul li {float:left; width:32%; margin-left: 2%; text-align:center; margin-bottom: 40px;}
+.accreditation-list ul li.ml0 {margin-left: 0;}
+.accreditation-list ul li p {font-size:12px; line-height: 15px; letter-spacing: -0.1px; color:#515151; margin-top: 10px; height:30px; overflow:hidden;}
+
+.accreditation-img {border:1px solid #E8E8E8}
+.accreditation-list ul li img {max-width:100%;}
+
+@media all and (max-width:1280px){
+	
+}
+
+@media all and (max-width:800px){
+	.accreditation-tit h3 {font-size:14px; line-height: 24px; margin-bottom: 10px;}
+	.accreditation-list ul li {width:48%; margin:0 1%; margin-bottom: 20px;}
+	.accreditation-list ul li.ml0 {margin-left: 1%;}
+	.accreditation-list ul li p {font-size:12px; line-height: 16px; margin-top: 5px;}
+}
+
+@media all and (max-width:480px){
+	.accreditation-list ul li {width:100%; margin:0; margin-bottom: 10px;}
+	.accreditation-list ul li.ml0 {margin-left: 0;}
+}
+
+/* ******************  Academic Department  ********************** */
+.department-tit h5 {font-size:24px; letter-spacing: 0.25px; color:#333333; font-weight: 600; margin-bottom: 20px;}
+.department-tit p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#444444; font-weight: 300;}
+
+.department-bx {margin-top: 20px;}
+.department-bx p {position:relative; font-size:13px; line-height: 18px; color:#656565; padding-left: 15px; margin-bottom: 20px;}
+.department-bx p::before {content:""; position:absolute; width:8px; height:8px; background-color:#073784; border-radius:50%; left:0; top:5px}
+
+.department-list {margin-top: 50px;}
+.department-list h5 {font-size:24px; letter-spacing: 0.25px; color:#333333; font-weight: 600; margin-bottom: 20px;}
+
+.sub-tab-container .cm-tab-list {margin-bottom: 25px;}
+.sub-tab-container .cm-tab-list ul li {float:left; width:24%; margin:0 0.5%; text-align:center; margin-bottom: 3px;}
+.sub-tab-container .cm-tab-list ul li a {display:block; padding:15px 0; background:#F2F2F2 linear-gradient(to right, #F2F2F2, #fff); border:1px solid #DFDFDF; font-size:15px; letter-spacing: -0.35px; color:#333333}
+.sub-tab-container .cm-tab-list ul li.selected a {background:#073784; color:#fff; }
+
+.depart-tab-top {display:table; width:100%; margin-bottom: 35px;}
+.depart-tab-top .depart-tab-img {display:table-cell; vertical-align: top; width:38%;}
+.depart-tab-top .depart-tab-info {display:table-cell; vertical-align: top; width:62%; padding-left: 30px; padding-top: 20px;}
+.depart-tab-top .depart-tab-info p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#444444; font-weight: 300;}
+
+.depart-table table {width:100%; border-top: 1px solid #333333; border-bottom: 1px solid #DFDFDF;}
+.depart-table table th {padding:15px 0; background-color:#F2F2F2; font-size:15px; line-height: 22px; letter-spacing: -0.2px; color:#222222}
+.depart-table table th:first-child, .depart-table table td:first-child {border-right: 1px solid #DFDFDF;}
+.depart-table table td {padding:20px; font-size:15px; line-height: 22px; letter-spacing: -0.2px; color:#666666; vertical-align: top;}
+
+.depart-img-bx {margin:10px 0;}
+.depart-img-bx ul li {float:left; width:31%; margin-left: 3.5%;}
+.depart-img-bx ul li img {max-width:100%;}
+.depart-img-bx ul li:first-child {margin-left: 0;}
+
+.depart-txt-bx {padding:10px 2%;}
+.depart-txt-bx p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#444444; font-weight: 300;}
+
+@media all and (max-width:1280px){
+	.department-list {margin-top: 35px;}
+}
+
+@media all and (max-width:800px){
+	.department-tit h5 {font-size:14px; margin-bottom: 10px;}
+	.department-tit p {font-size:13px; line-height: 20px;}
+
+	.department-bx {margin-top: 10px;}
+	.department-bx p {font-size:12px; line-height: 18px; padding-left: 10px; margin-bottom: 10px;}
+	.department-bx p::before {width:5px; height:5px;}
+
+	.department-list {margin-top: 15px;}
+	.department-list h5 {font-size:14px; margin-bottom: 10px;}
+
+	.sub-tab-container .cm-tab-list {margin-bottom: 10px;}
+	.sub-tab-container .cm-tab-list ul li  {width:49%;}
+	.sub-tab-container .cm-tab-list ul li a {font-size:12px; padding:7px 0;}
+
+	.depart-tab-top {margin-bottom: 15px; display:block;}
+	.depart-tab-top .depart-tab-img {display:block; width:100%; text-align:center;}
+	.depart-tab-top .depart-tab-info {display:block; width:96%; padding:0 2%; padding-top: 10px;}
+	.depart-tab-top .depart-tab-info p {font-size:12px; line-height: 16px ;}
+
+	.depart-table table th {font-size:12px; line-height: 16px;}
+	.depart-table table td {padding:10px; font-size:12px; line-height: 16px;}
+
+	.depart-img-bx {margin:5px 0;}
+
+	.depart-txt-bx {padding:5px 2%;}
+	.depart-txt-bx p {font-size:12px; line-height: 16px;}
+}
+
+/* ******************  Course Catalogue ********************** */
+.course-top {margin-bottom: 45px;}
+.course-top dl {display:table; width:100%; border:1px solid #DEDEDE; background-color:#F2F2F2}
+.course-top dt {display:table-cell; vertical-align: middle; width:12%; padding:15px 0; text-align:center;}
+.course-top dd {display:table-cell; vertical-align: middle; width:88%; }
+.course-top dd p {font-size:14px; line-height: 20px; letter-spacing: -0.2px; color:#656565; font-weight: 300;}
+
+.course-list h5 {font-size:18px; line-height: 22px; letter-spacing: -0.2px; color:#474747; margin-bottom: 15px;}
+.course-list-wrap dl {display:table; width:60%; margin-bottom: 10px;}
+.course-list-wrap dt {display:table-cell; width:70%; vertical-align: middle; font-size:15px; line-height: 20px; letter-spacing: -0.2px; color:#656565}
+.course-list-wrap dd {display:table-cell; width:30%; vertical-align: middle; text-align:center; }
+.course-list-wrap dd a {display:block; font-size:14px; line-height: 20px; letter-spacing: -0.2px; color:#6e6e6e}
+.course-list-wrap dd i {display:inline-block; vertical-align: middle; color:#000; font-size:20px}
+
+@media all and (max-width:1280px){
+	
+}
+
+@media all and (max-width:800px){
+	.course-top dt  {padding:7px 2%;}
+	.course-top dt img {max-width:100%;}
+	.course-top dd p {font-size:13px; line-height: 20px;}
+
+	.course-list h5 {font-size:12px; line-height: 17px; margin-bottom: 7px;}
+	.course-list-wrap dl {margin-bottom: 5px;}
+	.course-list-wrap dt {font-size:12px; line-height: 16px;}
+	.course-list-wrap dd a {font-size:12px; line-height: 16px;}
+
+	.course-list-wrap dd i {font-size:18px}
+}
+
+
+/* ******************  Academic Support ********************** */
+.support-top {margin-bottom: 20px;} 
+.support-top p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#656565; }
+
+.support-bx ul {position:relative; border:1px solid #D4D4D4; background-color:#F2F2F2; padding:10px 2%;}
+.support-bx ul::before {content:""; position:absolute; width:175px; height:2px; background-color:#073784; left:25px; top:-1px;}
+.support-bx dl {display:table; width:100%; padding:35px 0; border-top: 1px solid #E6E6E6;}
+.support-bx li:first-child dl {border-top: 0;}
+.support-bx dt {display:table-cell; width:14%; text-align:center; vertical-align: middle;}
+.support-bx dd {display:table-cell; width:86%; vertical-align: middle;}
+.support-bx dd h3 {font-size:20px; line-height: 22px; letter-spacing: -0.2px; color:#333333; font-weight: 600; margin-bottom: 15px;}
+.support-bx dd p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#656565}
+
+@media all and (max-width:1280px){
+	
+}
+
+@media all and (max-width:800px){
+	.support-top {margin-top: 10px;}
+	.support-top p {font-size:13px; line-height: 20px;}
+
+	.support-bx ul {padding:5px 2%;}
+	.support-bx ul::before {width:100px; left:15px;}
+	.support-bx dl {padding:15px 0;}
+	.support-bx dt {padding:0 2%; width:20%}
+	.support-bx dt img {max-width:100%;}
+	.support-bx dd {width:80%}
+	.support-bx dd h3 {font-size:13px; line-height: 18px; margin-bottom: 7px;}
+	.support-bx dd p {font-size:13px; line-height: 20px;}
+}
+
+
+/* ******************  Graduation Requirements ********************** */
+.require-top h5 {font-size:24px; line-height: 30px; letter-spacing: -0.25px; color:#333333; font-weight: 600; margin-bottom: 15px;}
+.require-top p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#656565; margin-bottom: 30px;}
+
+.require-info-tit {padding:15px 0; text-align:center; font-size:15px; line-height: 22px; letter-spacing: -0.2px; color:#222222; font-weight: 600; border-top: 1px solid #333; background-color:#F2F2F2; border-bottom: 1px solid #BDBDBD;}
+
+.require-table table {width:100%;}
+.require-table table thead th {font-size:15px; line-height: 22px; letter-spacing: -0.2px; color:#000000; padding:15px 0; border-bottom: 1px solid #DFDFDF; border-left: 1px solid #EBEBEB; font-weight: 400;}
+.require-table table thead th:first-child {border-left: 0;}
+.require-table table tbody th {font-size:15px; line-height: 28px; letter-spacing: -0.2px; color:#555555; font-weight: 400;}
+.require-table table tbody td {text-align:center; font-size:15px; line-height: 28px; letter-spacing: -0.2px; color:#666666; padding:5px 0; border-left: 1px solid #EBEBEB;}
+.require-table table tbody tr:first-child td , .require-table table tbody tr:first-child th{padding-top: 20px;}
+.require-table table tbody tr.last td, .require-table table tbody tr.last th {padding-bottom: 20px;}
+.require-table table tbody tr.total th, .require-table table tbody tr.total td {border-top: 1px solid #DFDFDF; border-bottom: 1px solid #DFDFDF; font-size:15px; line-height: 22px; letter-spacing: -0.2px; color:#000000; font-weight: 400;}
+
+@media all and (max-width:1280px){
+	
+}
+
+@media all and (max-width:800px){
+	.require-top h5 {font-size:14px; line-height: 19px; margin-bottom: 7px;}
+	.require-top p {font-size:13px; line-height: 20px; margin-bottom: 15px;}
+
+	.require-info-tit {padding:7px 0; font-size:12px; line-height: 16px;}
+
+	.require-table table thead th {font-size:12px; line-height: 16px; padding:7px 0;}
+	.require-table table tbody th {font-size:12px; line-height: 16px;}
+	.require-table table tbody td {font-size:12px; line-height: 16px;}
+	.require-table table tbody tr:first-child td , .require-table table tbody tr:first-child th {padding-top: 10px;}
+	.require-table table tbody tr.last td, .require-table table tbody tr.last th {padding-bottom: 10px;}
+	.require-table table tbody tr.total th, .require-table table tbody tr.total td {font-size:12px; line-height: 16px;}
+}
+
+
+/* ******************  Student Advising ********************** */
+.advising-top {background:url("/images/content/advising_bg.png") no-repeat right center; margin-bottom: 50px;}
+.advising-top-txt {width:50%;}
+.advising-top-txt h5 {font-size:24px; line-height: 29px; letter-spacing: -0.25px; color:#333333; font-weight: 600; margin-bottom: 20px;}
+.advising-top-txt p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#656656; font-weight: 300;}
+
+.advising-info h5 {font-size:24px; line-height: 29px; letter-spacing: -0.25px; color:#333333; font-weight: 600; margin-bottom: 20px;}
+.advising-info p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#656656; font-weight: 300;}
+
+@media all and (max-width:1280px){
+	.advising-top {margin-bottom: 35px;}
+}
+
+@media all and (max-width:800px){
+	.advising-top {margin-bottom: 15px;background:url("/images/content/advising_bg.png") no-repeat right bottom;  background-size:contain;}
+	.advising-top-txt {width:100%; padding-bottom: 60%;}
+	.advising-top-txt h5 {font-size:12px; line-height: 17px; margin-bottom: 10px;}
+	.advising-top-txt p {font-size:13px; line-height: 20px;}
+
+	.advising-info h5 {font-size:12px; line-height: 17px; margin-bottom: 10px;}
+	.advising-info p {font-size:12px; line-height: 16px;}
+}
+
+
+
+/* ******************  College Acceptance ********************** */
+.accept-top h5 {font-size:24px; line-height: 29px; letter-spacing: -0.25px; color:#333333; font-weight: 600; margin-bottom: 10px;}
+.accept-top p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#656656; font-weight: 300;}
+.accept-list {background-color:#F2F2F2; margin-top: 20px; border-top: 1px solid #073784;}
+.accept-list-inner {padding:20px 2%; background:url("/images/content/accept_bg.png") no-repeat center bottom;}
+.accept-list ul li {float:left; width:33.3%;}
+.accept-list ul li h4 {font-size:17px; line-height: 20px; letter-spacing: -0.25px; color:#073784; font-weight: 600; margin:20px 0;}
+.accept-list ul li h4:first-child {margin-top: 0;}
+.accept-list ul li p {font-size:12px; line-height: 24px; letter-spacing: -0.25px; color:#3f3f3f}
+
+@media all and (max-width:1280px){
+	
+}
+
+@media all and (max-width:800px){
+	.accept-top h5 {font-size:14px; line-height: 19px; margin-bottom: 5px;}
+	.accept-top p {font-size:12px; line-height: 16px; }
+	.accept-list {margin-bottom: 10px;}
+	.accept-list-inner {padding:10px 2%;}
+	.accept-list ul li h4 {font-size:12px; line-height: 17px; margin:10px 0;}
+	.accept-list ul li p {font-size:10px; line-height: 15px;}
+}
+
+@media all and (max-width:480px){
+	.accept-list ul li {float:left; width:100%; margin-bottom: 15px;}
+}
+
+
+/* ******************  College Counseling ********************** */
+.counseling-content h5 {font-size:22px; line-height: 27px; letter-spacing: -0.25px; color:#333333; font-weight: 600; margin-bottom: 25px;}
+.counseling-content h5 span {color:#868686}
+.counseling-top p {font-size:15px; line-height: 22px; letter-spacing: -0.2px; color:#656565}
+
+.counseling-fact {margin:40px 0;}
+.counseling-fact-list dl {display:table; width:100%;}
+.counseling-fact-list dt {display:table-cell; width:20%; vertical-align: top; font-size:15px; line-height: 27px; letter-spacing: -0.2px; color:#333333; font-weight: 600;}
+.counseling-fact-list dd {display:table-cell; width:80%; vertical-align: top; font-size:15px; line-height: 27px; letter-spacing: -0.2px; color:#656565; font-weight: 300;}
+
+.counseling-profile-bx {padding-left: 20px; position:relative; font-size:13px; line-height: 22px; letter-spacing: -0.1px; color:#585858; font-weight: 300; padding-bottom: 35px;}
+.counseling-profile-bx::after {content:""; position:absolute; left:0; top:10px; width:3px; height:13px; background-color:#073784; }
+.counseling-profile-bx::before {content:""; position:absolute; width:1px; height:100%; left:0; top:10px; background-color:#E7E7E7}
+.counseling-profile-bx h4 {font-size:15px; line-height: 33px; letter-spacing: -0.2px; color:#333333; font-weight: 600;}
+.counseling-profile-bx p {font-size:15px; line-height: 33px; letter-spacing: -0.2px; color:#656565; font-weight: 300;}
+
+@media all and (max-width:1280px){
+	
+}
+
+@media all and (max-width:800px){
+	.counseling-content h5  {font-size:14px; line-height: 19px; margin-bottom: 10px;}
+	.counseling-top p {font-size:12px; line-height: 16px;}
+
+	.counseling-fact {margin:20px 0;}
+	.counseling-fact-list dt  {font-size:13px; line-height: 20px;}
+	.counseling-fact-list dd {font-size:13px; line-height: 20px;}
+
+	.counseling-profile-bx {padding-left: 10px; font-size:10px; line-height: 15px; padding-bottom: 15px;}
+	.counseling-profile-bx::after {height:7px; top:5px;}
+	.counseling-profile-bx::before {top:5px;}
+	.counseling-profile-bx h4 {font-size:13px; line-height: 20px;}
+	.counseling-profile-bx p {font-size:12px; line-height: 16px;}
+}
+
+/* ******************  Homeroom ********************** */
+.homeroom-bx {margin-bottom: 25px;}
+.homeroom-bx:last-child {margin-bottom: 0; padding-bottom: 25px;}
+.homeroom-bx h5 {font-size:24px; line-height: 30px; letter-spacing: -0.25px; color:#333333; margin-bottom: 15px;}
+.homeroom-bx p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#656565; font-weight: 300; }
+.homeroom-list > p {margin-top: 10px; padding-left: 20px; background:url("/images/content/homeroom_arrow.png") no-repeat left 7px;}
+.homeroom-list span {display:inline-block; font-size:13px; letter-spacing: -1.4px; color:#001f52; font-weight: 600; margin-right:10px}
+.homeroom-img-bx {margin-top: 60px; position:relative; text-align:center;}
+.homeroom-img img {max-width:100%;}
+.homeroom-info-bx {position:absolute; border-radius:50%; box-shadow:17px 17px 29px rgba(0, 0, 0, 0.27);}
+
+.homeroom-bx-1 {top:0; left:50%; margin-left: -80px;}
+.homeroom-bx-2 {left:130px; top:50%; margin-top: -100px;}
+.homeroom-bx-3 {bottom:40px; left:50%; margin-left: -80px;}
+.homeroom-bx-4 {right:135px; top:50%; margin-top: -100px;}
+
+@media all and (max-width:1280px){
+	.homeroom-img-bx {margin-top: 42px;}
+}
+
+@media all and (max-width:800px){
+	.homeroom-bx {margin-bottom: 10px;}
+	.homeroom-bx:last-child {padding-bottom: 10px;}
+	.homeroom-bx h5 {font-size:14px; line-height: 19px; margin-bottom: 7px;}
+	.homeroom-bx p {font-size:13px; line-height: 20px;}
+
+	.homeroom-list {margin-top: 5px;}
+	.homeroom-list span {font-size:10px; margin-right: 5px;}
+
+	.homeroom-img-bx {margin-top: 20px;}
+
+	.homeroom-img {display:none;}
+	.homeroom-info-bx {position:static; box-shadow:none; float:left; width:25%; }
+
+	.homeroom-info-bx img {border-radius:50%; box-shadow:17px 17px 29px rgba(0, 0, 0, 0.27); max-width:90%;}
+
+	.homeroom-bx-1 {margin-left: 0;}
+	.homeroom-bx-2 {margin-top: 0;}
+	.homeroom-bx-3 {margin-left: 0px;}
+	.homeroom-bx-4 {margin-top: 0px;}
+}
+
+@media all and (max-width:480px){
+	.homeroom-info-bx {width:50%; margin-bottom: 10px;}
+}
+
+/* ******************  Student Council ********************** */
+.council-top h5 {font-size:24px; line-height: 30px; letter-spacing: -0.25px; color:#333333; font-weight: 600; margin-bottom: 25px;}
+.council-top p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#444444; font-weight: 300;}
+
+.counsil-list {margin-top: 20px;}
+.counsil-list p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#444444; font-weight: 300;}
+.counsil-list ul li {position:relative;padding-left: 15px; font-size:13px; line-height: 18px; color:#656565; font-weight: 300; margin-top: 15px;}
+.counsil-list ul li::before {content:""; position:absolute; width:8px; height:8px; background-color:#073784; border-radius:50%; left:0; top:5px;}
+.counsil-list ul li strong {font-weight: 600;}
+
+.counsil-bx {margin-top: 20px;}
+.counsil-bx p {text-align:center; padding:15px 0; font-size:16px; line-height: 22px; letter-spacing: -0.2px; color:#fff; background-color:#073784; border:1px solid #000000}
+.counsil-bx ul li {float:left; width:50%; padding:40px 0; text-align:center;}
+.counsil-bx ul li:first-child {background:#F4F4F4}
+
+@media all and (max-width:1280px){
+	.counsil-bx ul li {padding:28px 0;}
+	.counsil-bx ul li img {max-width:96%;}
+}
+
+@media all and (max-width:800px){
+	.council-top h5 {font-size:14px; line-height: 19px; margin-bottom: 10px;}
+	.council-top p {font-size:13px; line-height: 20px; }
+
+	.counsil-list {margin-top: 10px;}
+	.counsil-list p {font-size:12px; line-height: 16px; }
+	.counsil-list ul li {padding-left: 10px; font-size:13px; line-height: 20px; margin-top: 7px;}
+	.counsil-list ul li::before {width:5px; height:5px; }
+
+	.counsil-bx {margin-top: 10px;}
+	.counsil-bx p {padding:7px 0; font-size:12px; line-height: 18px;}
+	.counsil-bx ul li {padding:15px 0;}
+}
+
+@media all and (max-width:480px){
+	.counsil-bx ul li {float:none; width:100%;}
+}
+
+
+/* ******************  National Honor Society ********************** */
+.nhs-content h5 {font-size:24px; line-height: 30px; letter-spacing: -0.25px; color:#333333; font-weight: 600;}
+.nhs-info {display:table; width:100%; margin-top: 20px;}
+.nhs-txt {display:table-cell; width:66%; vertical-align: top;}
+.nhs-txt p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#656565; font-weight: 300;}
+.nhs-img {display:table-cell; width:34%; text-align:center; vertical-align: top;}
+.nhs-img img {max-width:100%;} 
+
+@media all and (max-width:1280px){
+	
+}
+
+@media all and (max-width:800px){
+	.nhs-content h5 {font-size:14px; line-height: 19px;}
+	.nhs-info {display:block; margin-top: 10px;}
+	.nhs-txt {display:block; width:100%;}
+	.nhs-txt p {font-size:13px; line-height: 20px;}
+	.nhs-img {display:block; width:100%; margin-top: 10px;}
+}
+
+
+/* ******************  Honor Council ********************** */
+.honor-content h5 {font-size:24px; line-height: 30px; letter-spacing: -0.25px; color:#333333; font-weight: 600; margin-bottom: 25px;}
+.honor-content p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#444444; font-weight: 300;}
+.honor-content p:last-child {margin-top: 15px;}
+.honor-content p span {font-size:12px; }
+
+@media all and (max-width:1280px){
+	
+}
+
+@media all and (max-width:800px){
+	.honor-content h5 {font-size:14px; line-height: 19px; margin-bottom: 10px;}
+	.honor-content p {font-size:12px; line-height: 16px; }
+	.honor-content p:last-child  {margin-top: 7px;}
+	.honor-content p span {font-size:10px}
+}
+
+
+/* ******************  Club Activities ********************** */
+.club-bx h5 {font-size:24px; line-height: 30px; letter-spacing: -0.25px; color:#333333; font-weight: 600; margin-bottom: 20px;}
+.club-bx:last-child {margin-top: 65px;}
+
+.club-img-bx {margin-bottom: 10px;}
+.club-img-bx ul li {float:left; width:32%; margin-left: 2%;}
+.club-img-bx ul li:first-child {margin-left: 0;}
+
+.club-txt-bx h4 {font-size:18px; line-height: 22px; letter-spacing: -0.2px; color:#333333; font-weight: 400; margin-bottom: 10px;}
+.club-txt-bx p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#656565; font-weight: 300; margin-bottom: 40px;}
+
+.club-list-tit {font-size:18px; line-height: 22px; letter-spacing: -0.2px; color:#333333; padding:15px 20px; background-color:#F2F2F2; border-top: 1px solid #333333;}
+.club-list ul {display:table; width:100%;}
+.club-list ul li {display:table-cell; width:25%; padding:20px; border-left: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD;}
+.club-list ul li:first-child {border-left: 0;}
+.club-list ul li p {font-size:15px; line-height: 22px; letter-spacing: -0.2px; color:#666666; font-weight: 400; }}
+.club-list ul li p span {color:#073784}
+
+.club-caption {margin-top: 5px; font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#656565; font-weight: 300;}
+.club-caption span {color:#073784}
+
+@media all and (max-width:1280px){
+	.club-bx:last-child {margin-top: 45.5px;}
+	.club-img-bx ul li img {max-width:100%;}
+	.club-txt-bx p {margin-bottom: 28px;}
+}
+
+@media all and (max-width:800px){
+	.club-bx h5 {font-size:12px; line-height: 17px; margin-bottom: 10px;}
+	.club-bx:last-child {margin-top: 20px;}
+	.club-img-bx {margin-bottom: 5px;}
+
+	.club-txt-bx h4 {font-size:13px; line-height: 20px; margin-bottom: 5px;}
+	.club-txt-bx p {font-size:13px; line-height: 20px; margin-bottom: 10px;}
+
+	.club-list-tit {font-size:12px; line-height: 17px; padding:7px 10px;}
+	.club-list ul li {padding:10px;}
+	.club-list ul li p {font-size:12px; line-height: 16px;}
+
+	.club-caption {font-size:12px; line-height: 16px;}
+}
+
+
+/* ****************** Daily Schedule ********************** */
+.daily-type-2 {margin-top: 40px;}
+
+.daily-content table {width:100%; border-top: 1px solid #333333;}
+.daily-content table thead th {text-align:center; padding:15px 20px; background-color:#F2F2F2; font-size:18px; line-height: 22px; letter-spacing: -0.2px; color:#000000}
+.daily-content table thead th.title  {text-align:left; color:#fff; }
+.daily-type-1 thead th.title {background-color:#073784} 
+.daily-type-2 thead th.title {background-color:#126F06} 
+.daily-content table tbody th {text-align:left; padding:15px 20px; font-size:16px; line-height: 22px; letter-spacing: -0.2px; color:#555555; border-bottom: 1px solid #ddd;}
+.daily-content table tbody td {font-size:16px; line-height: 22px; letter-spacing: -0.2px; color:#555555; text-align:center; border-left: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+
+.daily-type-1 tbody th {background-color:#F6FAFF} 
+.daily-type-2 tbody th {background-color:#F8FFF6} 
+
+@media all and (max-width:1280px){
+	.daily-type-2 {margin-top: 28px;}
+}
+
+@media all and (max-width:800px){
+	.daily-type-2 {margin-top: 10px;}
+	.daily-content table thead th {padding:7px 10px; font-size:12px; line-height: 17px;}
+	.daily-content table tbody th {padding:7px 10px; font-size:12px; line-height: 17px;}
+	.daily-content table tbody td {font-size:12px; line-height: 17px;}
+}
+
+/* ****************** Art ********************** */
+.art-gallery-list {position:relative;}
+
+.art-top {margin-bottom: 15px;}
+.art-top h5 {font-size:24px; line-height: 30px; letter-spacing: -0.25px; color:#333333; font-weight: 600; margin-bottom: 15px; }
+.art-top p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#444444; font-weight: 300;}
+
+.art-bx {padding:64px 40px;border-radius:5px; background:url("/images/content/art_bg.jpg") no-repeat center; background-size:cover; margin-bottom: 55px;}
+.art-bx h4 {font-size:31px; line-height: 36px; color:#232323; font-weight: 600; margin-bottom: 10px;}
+.art-bx p {font-size:14px; line-height: 22px; color:#414141;}
+
+.art-gallery h5 {font-size:24px; line-height: 30px; letter-spacing: -0.25px; color:#333333; font-weight: 600; margin-bottom: 10px; }
+
+.art-gallery-list{position:relative; width:100%; margin:0px auto;}
+.art-gallery-list > .grid img {max-width:100%;}
+.art-gallery-list > .grid, .art-gallery-list > div.grid-sizer{float:left; width:283px; margin-bottom:22px; }
+.art-gallery-list > div.grid-term{width:20px;}
+.art-gallery-list > div.mal0{margin-left:0;}
+
+@media all and (max-width:1280px){
+	.art-bx {margin-bottom: 38.5px;}
+	.art-gallery-list > div.grid-term{width:1%;}
+}
+
+@media all and (max-width:920px){
+	.art-gallery-list > .grid, .art-gallery-list > div.grid-sizer{width:32%; margin-bottom:16px;}
+}
+
+@media all and (max-width:800px){
+	.art-top {margin-bottom: 7px;}
+	.art-top h5 {font-size:14px; line-height: 19px; margin-bottom: 7px;}
+	.art-top p {font-size:12px; line-height: 16px;}
+
+	.art-bx {padding:15px; margin-bottom: 15px;}
+	.art-bx h4 {font-size:16px; line-height: 20px; margin-bottom: 5px;}
+	.art-bx p {font-size:12px; line-height: 16px;}
+
+	.art-gallery h5 {font-size:14px; line-height: 19px; margin-bottom: 5px;}
+}
+
+@media all and (max-width:800px){
+	.art-gallery-list > .grid, .art-gallery-list > div.grid-sizer{width:49%; }
+}
+
+@media all and (max-width:480px){
+	.art-gallery-list > .grid, .art-gallery-list > div.grid-sizer{width:49%; }
+}
+
+
+
+/* ****************** People of SPPS ********************** */
+.people-content .faq-list-con {border-top: 0;}
+.people-content .faq-list-con .faq-item {margin-bottom: 10px; border-bottom: 0;}
+.people-content .faq-list-con .faq-item dt {background:linear-gradient(to right, #F2F2F2, #FFFFFF); padding:15px 30px 15px 15px; border-top: 1px solid #D9D9D9;}
+.people-content .faq-list-con .faq-item dt .faq-title {color:#323232; font-size:16px; } 
+.people-content .faq-list-con .faq-item dt i {color:#000000; font-size:30px}
+.people-content .faq-list-con .faq-item dt .arrow {right:25px}
+.people-content .faq-list-con .faq-item dd {padding:0; background-color:#fff;}
+
+.people-content .faq-list-con .faq-item.open dt {background:linear-gradient(to right, #073784, #00296A);}
+.people-content .faq-list-con .faq-item.open dt .faq-title {color:#fff;}
+.people-content .faq-list-con .faq-item.open dt i {color:#fff;}
+.people-content .faq-list-con .faq-item.open dt .arrow {top:12px;}
+
+.people-info {display:table; width:calc(100% - 30px); padding:15px; border-bottom: 1px solid #EEEEEE;}
+.people-info-inner {display:table-cell; width:93%; vertical-align: middle;}
+.people-info-inner h4 {font-size:16px; line-height: 20px; color:#000000; margin-bottom: 5px;}
+.people-info-inner h4 i {margin-left: 10px;}
+.people-info-inner p {font-size:13px; line-height: 20px; color:#666666; font-weight: 300;}
+.people-subject {display:table-cell; width:7%; vertical-align: middle; font-size:13px; color:#666666; }
+
+.people-info:hover {background-color:#F6F9FF}
+
+@media all and (max-width:1280px){
+	
+}
+
+@media all and (max-width:800px){
+	.people-content .faq-list-con .faq-item dt {padding:7px 15px 7px 7px;}
+	.people-content .faq-list-con .faq-item dt .faq-title {font-size:12px}
+	.people-content .faq-list-con .faq-item dt i {font-size:20px}
+	.people-content .faq-list-con .faq-item dt .arrow {right:15px;}
+
+	.people-content .faq-list-con .faq-item.open dt .arrow {top:7px}
+
+	.people-info {padding:7px; width:calc(100% - 14px);}
+	.people-info-inner {width:85%;}
+	.people-info-inner h4 {font-size:12px; line-height: 17px;}
+	.people-info-inner p {font-size:12px; line-height: 15px;}
+	.people-subject {font-size:10px; width:15%; text-align:right;}
+}
+
+/* ****************** Facts & Stats ********************** */
+.fact-content h5 {font-size:24px; line-height: 30px; letter-spacing: -0.25px; color:#333333; font-weight: 600; margin-bottom: 20px; }
+.fact-content h5 span {color:#868686;}
+
+.fact-top ul {border-top: 1px solid #333;}
+.fact-top ul li {float:left; width:calc(50% - 51px); padding:25px; border-bottom: 1px solid #C3C3C3;}
+.fact-top ul li.bl {border-left: 1px solid #C3C3C3;}
+.fact-top ul li:first-child, .fact-top ul li:last-child {background-color:#F2F2F2;}
+
+.fact-top ul li .fact-top-wrap {display:table; width:100%; height:98px;}
+.fact-top ul li .fact-top-img {display:table-cell; width:32.5%; vertical-align: top; text-align:center;}
+.fact-top ul li .fact-top-info {display:table-cell; width:55.5%; vertical-align: top;}
+.fact-top ul li .fact-top-info h4 {font-size:16px; line-height: 25px; letter-spacing: -0.25px; color:#333333}
+.fact-top ul li .fact-top-info p {font-size:16px; line-height: 20px; letter-spacing: -0.25px; color:#3e3e3e; }
+.fact-top ul li .fact-top-info p.m10 {margin:5px 0;}
+.fact-top ul li .fact-top-info p span {font-size:14px; }
+
+@media all and (max-width:1280px){
+	
+}
+
+@media all and (max-width:800px){
+	.fact-content h5 {font-size:14px; line-height: 19px; margin-bottom: 10px;}
+	.fact-top ul li {width:calc(100% - 20px); padding:10px;}
+	.fact-top ul li.bl {border-left: 0;}
+	.fact-top ul li:first-child, .fact-top ul li:last-child {background-color:#fff;}
+	.fact-top ul li:nth-child(2n-1){background-color:#F2F2F2;}
+
+	.fact-top ul li .fact-top-wrap {height:auto;}
+	.fact-top ul li .fact-top-img img {max-width:100%;}
+	.fact-top ul li .fact-top-info h4 {font-size:12px; line-height: 17px;}
+	.fact-top ul li .fact-top-info p {font-size:12px; line-height: 17px;}
+	.fact-top ul li .fact-top-info p span {font-size:12px}
+}
+
+/* ****************** How to Apply ********************** */
+.apply-content h5 {font-size:24px; line-height: 30px; letter-spacing: -0.25px; color:#333333; font-weight: 600; margin-bottom: 20px; }
+.apply-top {margin-bottom: 30px;}
+.apply-top-img-bx {text-align:center; margin:50px 0;}
+.apply-top-img-bx img {min-width:680px; }
+
+.apply-info-bx {margin-top: 15px; padding-bottom: 30px;}
+.apply-info-bx > p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#656565; margin-bottom: 25px;}
+.apply-info-bx h4 {font-size:18px; line-height: 22px; letter-spacing: -0.2px; color:#474747; font-weight: 500; margin-bottom: 15px;}
+.apply-info-bx  b{display:block; margin-bottom:10px;}
+
+.apply-list {display:table; width:60%; margin-bottom: 10px;}
+.apply-list .apply-list-tit {display:table-cell; width:70%; vertical-align: middle; font-size:15px; line-height: 20px; letter-spacing: -0.2px; color:#656565}
+.apply-list .apply-list-download {display:table-cell; width:30%; vertical-align: middle; text-align:center; }
+.apply-list .apply-list-download a {display:block; font-size:14px; line-height: 20px; letter-spacing: -0.2px; color:#6e6e6e}
+.apply-list .apply-list-download i {display:inline-block; vertical-align: middle; color:#000; font-size:20px}
+
+@media all and (max-width:1280px){
+	.apply-top-img-bx img {max-width:100%}
+}
+
+@media all and (max-width:800px){
+	.apply-top-img-bx {overflow-x:auto; width:100%;}
+
+	.apply-content h5 {font-size:12px; line-height: 17px; margin-bottom: 10px;}
+	.apply-top {margin-bottom: 10px;}
+
+	.apply-info-bx {margin-top: 7px; padding-bottom: 10px;}
+	.apply-info-bx > p {font-size:13px; line-height: 20px; margin-bottom: 10px;}
+	.apply-info-bx h4 {font-size:13px; line-height: 20px; margin-bottom: 7px;}
+
+	.apply-list {margin-bottom: 5px; width:80%}
+	.apply-list .apply-list-tit {font-size:12px; line-height: 16px;}
+	.apply-list .apply-list-download a {font-size:12px; line-height: 16px;}
+	.apply-list .apply-list-download i {font-size:18px}
+}
+
+/* ****************** Visit SPPS ********************** */
+.map-info {margin-top: 25px;}
+.map-info h4 {font-size:18px; line-height: 37px; letter-spacing: -0.2px; color:#2c2c2c; font-weight: 500; padding-bottom: 15px; margin-bottom: 15px; border-bottom: 1px solid #E5E5E5;}
+.map-info p {font-size:14px; line-height: 25px; letter-spacing: -0.2px; color:#656565; font-weight: 300; margin-bottom: 45px;}
+.map-info a {display:inline-block;  height:35px; line-height: 35px; text-align:center; font-size:14px; letter-spacing: -0.75px;  color:#fff; border-radius:5px; background-color:#073784; padding:0 20px;}
+.map-info a i {display:inline-block; vertical-align: middle; margin-right:10px; font-size:20px}
+
+@media all and (max-width:1280px){
+	.map-info p {margin-bottom: 31.5px;}
+}
+
+@media all and (max-width:800px){
+	.map-info {margin-top: 10px;}
+	.map-info h4 {font-size:13px; line-height: 20px; padding-bottom: 7px; margin-bottom: 7px;}
+	.map-info p {font-size:13px; line-height: 20px; margin-bottom: 15px;}
+	.map-info a { height:30px; font-size:12px; line-height: 30px;}
+	.map-info a i {margin-right:5px; font-size:18px}
+}
+
+/* ****************** Employment ********************** */
+.employ-top {padding-bottom: 75px;}
+.employ-top p {font-size:15px; line-height: 22px; letter-spacing: -0.2px; color:#656565; font-weight: 300; margin-bottom: 30px;}
+.employ-list p {font-size:15px; line-height: 22px; letter-spacing: -0.2px; color:#333333; font-weight: 300; margin-bottom: 15px;}
+.employ-list ul {margin-bottom: 25px;}
+.employ-list ul li {position:relative; font-size:13px; line-height: 22px; color:#656565; font-weight: 300; padding-left: 15px;  }
+.employ-list ul li::before {content:""; position:absolute; width:8px; height:8px; background-color:#073784; border-radius:50%; left:0; top:7px;}
+
+.employ-btn a {display:inline-block; width:220px; height:48px; border:1px solid #545454; background:linear-gradient(to right, #073784, #00296A); text-align:center; font-size:15px; line-height: 48px; letter-spacing: -0.35px; color:#fff; }
+
+
+@media all and (max-width:1280px){
+	.employ-top {padding-bottom: 52.5px;}
+
+	.employ-btn a {width:154px; height:35px; line-height: 35px;}
+}
+
+@media all and (max-width:800px){
+	.employ-top {padding-bottom: 20px;}
+	.employ-top p {font-size:12px; line-height: 16px; margin-bottom: 10px;}
+	.employ-list p {font-size:12px; line-height: 16px; margin-bottom: 7px;}
+	.employ-list ul {margin-bottom: 10px;}
+	.employ-list ul li {font-size:10px; line-height: 15px; padding-left: 10px;}
+	.employ-list ul li::before {width:5px; height:5px; }
+
+	.employ-btn a {width:130px; height:30px; line-height: 30px; font-size:12px;}
+	
+}
+
+
+/* news 캘린더 작업 */
+.news-calendar #datepicker .ui-widget.ui-widget-content {border:4px solid #07357F; padding:0; width:calc(100% - 8px); border-radius:0;}
+.news-calendar #datepicker .ui-datepicker-header {border-radius:0; height:75px; background-color:#07357F; border:0;}
+.news-calendar  .ui-datepicker .ui-datepicker-prev, .news-calendar .ui-datepicker .ui-datepicker-next {top:23px}
+
+.news-calendar .ui-datepicker .ui-datepicker-title {line-height: 75px; color:#fff; font-size:30px; letter-spacing: -0.25px; font-weight: 600;}
+.news-calendar .ui-datepicker .ui-datepicker-prev, .news-calendar .ui-datepicker .ui-datepicker-next {width:13px; height:20px; cursor:pointer;}
+
+.news-calendar #datepicker .ui-widget-header .ui-datepicker-next {right:35px;}
+.news-calendar #datepicker .ui-widget-header .ui-datepicker-next .ui-icon {background-image:url("/images/button/calendar_next.png"); background-position:center; width:13px; height:20px; }
+.news-calendar #datepicker .ui-widget-header .ui-datepicker-prev {left:35px;}
+.news-calendar #datepicker .ui-widget-header .ui-datepicker-prev .ui-icon {background-image:url("/images/button/calendar_prev.png"); background-position:center; width:13px; height:20px; }
+.news-calendar .ui-state-hover,
+.news-calendar .ui-widget-content .ui-state-hover,
+.news-calendar .ui-widget-header .ui-state-hover,
+.news-calendar .ui-state-focus,
+.news-calendar .ui-widget-content .ui-state-focus,
+.news-calendar .ui-widget-header .ui-state-focus,
+.news-calendar .ui-button:hover,
+.news-calendar .ui-button:focus {
+	border: 0;
+	background: transparent;
+	font-weight: normal;
+}
+
+
+.news-calendar .ui-datepicker-calendar {margin:20px 0;}
+.news-calendar #datepicker  .ui-datepicker-header {display:block;}
+.news-calendar .ui-datepicker-calendar > thead th {font-size:16px}
+.news-calendar .ui-datepicker-calendar > tbody td {font-size:15px; padding:10px 0;}
+
+@media all and (max-width:800px){
+	.news-calendar #datepicker .ui-datepicker-header {height:40px;}
+	.news-calendar  .ui-datepicker .ui-datepicker-prev, .news-calendar .ui-datepicker .ui-datepicker-next {top:10px;}
+	.news-calendar .ui-datepicker .ui-datepicker-title {line-height: 40px; font-size:16px;}
+
+	.news-calendar #datepicker .ui-widget-header .ui-datepicker-next {right:15px;}
+	.news-calendar #datepicker .ui-widget-header .ui-datepicker-prev {left:15px;}
+
+	.news-calendar .ui-datepicker-calendar {margin:10px 0;}
+	.news-calendar .ui-datepicker-calendar > thead th {font-size:12px} 
+	.news-calendar .ui-datepicker-calendar > tbody td {font-size:12px; padding:5px 0;}
+}
+
+.schedule-info-wrap #mCSB_1_scrollbar_vertical {
+    width: 6px;
+    margin: 0px;
+    opacity: 1.0;
+    filter: Alpha(opacity=100);
+    right: -6px;
+}
+.schedule-info-wrap #mCSB_1_scrollbar_vertical .mCSB_draggerRail {
+width: 6px;
+background-color: #C5C5C5;
+border-radius: 0;
+}
+.schedule-info-wrap #mCSB_1_scrollbar_vertical .mCSB_dragger_bar {width: 6px;
+background-color: #07357F;
+border-radius: 0;}
+
+.news-calendar {display:table; width:100%; margin-bottom: 30px;}
+.schedule-calendar {display:table-cell; width:65%; vertical-align: top;}
+
+.schedule-info-wrap {height:335px; overflow-y:auto;}
+.schedule-info {display:table-cell; vertical-align: top; width:35%; border:1px solid #07357F; border-left: 0; padding:20px 20px;     background: linear-gradient(to left top, #EEEEEE, #fff);}
+.schedule-info h3 {font-size:30px; line-height: 50px; letter-spacing: -0.25px; color:#07357f; font-weight: 600; }
+.calendar-list-inner {padding:15px 0; border-top: 1px solid #E5E5E5;}
+.calendar-list-inner:first-child {border-top: 0;}
+.calendar-list-inner h4 {font-size:18px; line-height: 30px; letter-spacing: -0.25px; color:#111111; font-weight: 600; margin-bottom: 10px;}
+.calendar-list-inner p {font-size:14px; line-height: 22px; letter-spacing: -0.25px; color:#555; font-weight:300;}
+
+@media all and (max-width:800px){
+	.news-calendar {display:block;}
+
+	.schedule-calendar {display:block; width:100%;}
+	.schedule-info {display:block; width:calc(100% - 38px); padding:10px 15px; border:4px solid #07357F; border-top: 0; }
+	.schedule-info-wrap {height:150px; }
+	.schedule-info h3 {font-size:19px; line-height: 24px; }
+	.calendar-list-inner {padding:15px 0; }
+	.calendar-list-inner h4 {font-size:12px; line-height: 18px; margin-bottom: 5px;}
+	.calendar-list-inner p {font-size:12px; line-height: 18px;}
+}
+
+/* ****************** admission ********************** */
+.admission-content > p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#474747; font-weight: 300; margin:40px 0;}
+
+@media all and (max-width:800px){
+	.admission-content > p  {margin:20px 0; font-size:13px; line-height: 20px;}
+}
+
+/* ****************** School symbol ********************** */
+.symbol-top {text-align:center; padding:60px 0; background:url("/images/content/symbol_bg_2.png") repeat; border:1px solid #CFCFCF}
+.symbol-top img {max-width:100%;}
+.symbol-bx {margin-top: 40px;}
+.symbol-bx h5 {font-size:26px; line-height: 31px; letter-spacing: -0.25px; color:#333333; font-weight: 500; margin-bottom: 15px;}
+.symbol-bx p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#474747; font-weight: 300;}
+
+.symbol-list {margin-top: 40px;}
+.symbol-inner {display:table; width:90%; border:1px solid #CFCFCF; padding:40px 5%; margin-bottom: 20px;}
+.symbol-img {display:table-cell; width:25%; vertical-align: middle; text-align:left;}
+.symbol-info {display:table-cell; width:75%; vertical-align: middle; }
+.symbol-info p {font-size:14px; line-height: 22px; letter-spacing: -0.2px; color:#474747; font-weight: 300;}
+
+.symbol-style-1 {background:url("/images/content/symbol_bg_1.png") repeat; }
+.symbol-style-2 {background:url("/images/content/symbol_bg_2.png") repeat; }
+
+@media all and (max-width:800px){
+	.symbol-top {padding:30px 0; }
+	.symbol-top img {max-width:50%;}
+
+	.symbol-bx {margin-top: 20px;}
+	.symbol-bx h5 {font-size:16px; line-height: 21px; margin-bottom: 7px;}
+	.symbol-bx p {font-size:13px; line-height: 20px;}
+
+	.symbol-list {margin-top: 20px;}
+	.symbol-inner {display:block; padding:20px 3%; width:94%; margin-bottom: 10px;}
+	.symbol-img {display:block; width:100%; text-align:center; margin-bottom: 10px;}
+	.symbol-info {display:block; width:100%;}
+	.symbol-info p {font-size:13px; line-height: 17px;}
+}

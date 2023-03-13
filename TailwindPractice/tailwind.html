@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            stripeblue: {
+              100: '#7a73ff',
+              200: '#635bff'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <title>Stripe Login</title>
+  <style type="text/tailwindcss">
+
+    @layer base {
+      a {
+        @apply text-teal-600;
+      }
+    }
+    
+    @layer components {
+    
+      .background-blue {
+        @apply relative h-10 w-1/3 bg-teal-700;
+      }
+
+      .text_input {
+        @apply flex flex-col mt-4;
+      }
+
+      .text_input label {
+        @apply py-4 px-0.5;
+      }
+
+      .text_input input {
+        @apply rounded-md border border-stone-600 p-3 text-lg;
+      }
+
+      .dialog_post, .footer {
+        @apply my-8 px-6;
+      }
+
+      .helpful button {
+        @apply shadow-md border border-gray-100 rounded-md mx-1.5 py-0.5 px-1.5;
+      }
+
+      .footer ul li {
+        @apply text-gray-500 mb-8;
+      }
+
+      .footer ul li:not(:last-child)::after {
+        content: "•";
+        margin: 0 0.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body class="h-screen flex justify-center text-slate-700">
+  <div class="absolute -top-1/3 bottom-2/3 left-0 right-0 -z-10 -skew-y-12">
+    <div class="h-full -mb-10 bg-white-800"></div>
+    <div class="background-blue float-right"></div>
+    <div class="background-blue float-left clear-both"></div>
+    <div class="clear-both relative w-[150px] h-10 bg-[#115e59] bottom-[70px] opacity-75 left-[calc(30%-300px)]"></div>
+  </div>
+
+  <div class="max-w-xl min-h-full border-l border-r border-dashed border-gray-100 mx-4">
+    <div class="p-6 fill-gray-600">
+    
+    </div>
+
+    <div class="m-px p-5 flex flex-col rounded-md shadow-2xl bg-white transition  linear hover:scale-110">
+      <div class="font-['Segoe UI'] text-2xl mt-4">Sign in to your <span class="before:block before:absolute before:-inset-1 before:-skew-y-2 before:bg-teal-700 relative inline-block">
+        <span class="relative text-white"> account </span>
+      </span></div>
+      <div class="text_input">
+        <label for="in_email">Email</label>
+        <input type="text" id="in_email">
+      </div>
+      <div class="text_input">
+        <label for="in_password">Password</label>
+        <input type="text" id="in_password">
+      </div>
+      <div>
+        <input class="my-8 accent-teal-700 w-10 h-5 inline" type="checkbox" name="" id="in_stay" checked>
+        <label class="inline" for="in_stay">Stay signed in for a week</label>
+      </div>
+      <button class="dark:md:hover:bg-teal-600 rounded-md bg-teal-700 text-white border-0 h-12" id="but_continue">Continue</button>
+      <div class="my-8 text-center" id="sso"><a href="">Use single sign-on (SSO) instead</a></div>
+    </div>
+
+    <div class="dialog_post">
+      <div class="no_account">Don't have an account? <a href="">Sign up</a></div>
+      <br>
+      <div class="my-4">
+        <div class="bg-gray-100 rounded-md my-1.5 py-0.5 px-1.5 text-sm flex items-center text-gray-400 w-fit">
+          <svg class="mr-1 fill-teal-400" aria-hidden="true" height="12" width="12" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3 7V5a5 5 0 1 1 10 0v2h.5a1 1 0 0 1 1 1v6a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2V8a1 1 0 0 1 1-1zm5 2.5a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1zM11 7V5a3 3 0 1 0-6 0v2z"
+              fill-rule="evenodd"></path>
+          </svg>
+          Security tip
+        </div>
+        Check the URL to make sure you're signing into dashboard.clem.com. Phishing attacks often use a fake
+        website
+        to access your login information. For example, attackers might use a misspelled version of the URL.
+        <br><br>
+        <div class="helpful my-1.5">Is this tip helpful? <button>Yes 👍</button><button>No 👎</button></div>
+      </div>
+    </div>
+<br>
+    <div class="footer">
+      <ul class="flex">
+        <li>© Clem</li>
+        <li>Contact</li>
+        <li>Privacy & terms</li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+
+</html>

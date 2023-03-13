@@ -2,7 +2,7 @@ span:not(.asterix){
     color: brown;
 }
 *{
-    cursor: url(/png-clipart-man-wearing-black-tu.png), auto;
+    cursor: url(png-clipart-man-wearing-black-tu.png), auto;
 }
 html{
     scroll-behavior: smooth;
@@ -35,7 +35,7 @@ h6{
 }
 #submit{
     background-color: #3d8705;
-    background-image: url(/png-transparent-espresso-machines-coffeemaker-nespresso-coffee-machine-electronics-kitchen-appliance-coffee.png);
+    background-image: url(png-transparent-espresso-machines-coffeemaker-nespresso-coffee-machine-electronics-kitchen-appliance-coffee.png);
     font-size: 14px;
     color: transparent;
     letter-spacing: 1.16667px;
@@ -133,7 +133,7 @@ select{
 }
 body{
     background-color: black;
-    background-image: url(/nespresso-george-clooney.webp);
+    background-image: url(nespresso-george-clooney.webp);
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
     padding: 238px;
     padding-bottom: 0px;

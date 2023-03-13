@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page2.css">
+    <title>Document</title>
+
+
+    <!-- ////////////////////////////////////////////////////////////////////// -->
+    <!-- ///////////////////////////////DOCUMENTATION MAIN PAGE////////////////-->
+    <!-- ////////////////////////////////////////////////////////////////////// -->
+
+    <!-- 
+    ​‌‍⁡⁣⁢⁣‌𝗖͟𝗟͟𝗔͟𝗦͟𝗦͟𝗘͟𝗦:⁡​
+⁡⁣⁢⁣container-body⁡= to add an overflowx hidden to get rid of the horizontal scrollbar
+⁡⁣⁢⁣typing-figcaption⁡= typing effect 
+⁡⁣⁢⁣radioyesno⁡= for radio buttons agreeing to the terms
+⁡⁣⁢⁣parallax-one shutter-out-vertical⁡= for the first section of the parallax to have a special transition
+⁡⁣⁢⁣luminositycontrol⁡= for the hidden checkbox related to the virus screen
+⁡⁣⁢⁣lockscreencheck⁡= for the hidden checkbox related to the virus screen
+other classes are self-explenatory
+
+
+⁡⁣⁣⁢W͟E͟B͟S͟I͟T͟E S͟T͟R͟U͟C͟T͟U͟R͟E͟: 
+Parallax from the title to the last paragraph
+hidden registration form behind the first picture⁡
+⁡⁣⁣⁢navbar leading to sections on the page + other HTML pages with target attibute
+(values vision mission page, contact us form ) 
++ newsletter hidden registration form⁡
+⁡⁣⁣⁢Section for Graduation Video and hidden checkboxes (can turn on the light, unlock screen and get rid of virus)
+Stats section with preserve 3D
+Phone hover effect to reveal the truth about SPPS⁡
+⁡⁣⁣⁢footer leading to google maps and real links from the official SPPS website⁡
+
+
+⁡⁢⁢⁣𝗛͟𝗢͟𝗩͟𝗘͟𝗥 𝗘͟𝗙͟𝗙͟𝗘͟𝗖͟𝗧͟𝗦⁡:
+hover on the ⁡⁢⁢⁣first picture ⁡displays another picture with special effect
+hover on the ⁡⁢⁢⁣woman character⁡ displays user accessibility guidance
+hidden audio to accompany the user on her ⁡⁢⁢⁣face⁡, hinted by a change of cursor appearance
+hover on ⁡⁢⁢⁣apply for fall 2023⁡
+hover on the ⁡⁢⁢⁣woman character⁡ displays bubles
+hover on ⁡⁢⁢⁣flipping cards ⁡preserve 3D 
+
+⁡⁢⁢⁢𝗦͟𝗢͟𝗨͟𝗥͟𝗖͟⁡⁢⁢⁢𝗘͟𝗦⁡⁡: 𝕚𝕞𝕒𝕘𝕚𝕟𝕒𝕥𝕚𝕠𝕟 + 𝕂𝕖𝕧𝕚𝕟 ℙ𝕠𝕨𝕖𝕝𝕝 + ℂ𝕠𝕕𝕖ℙ𝕖𝕟 + 𝕆𝕟𝕝𝕚𝕟𝕖 𝕋𝕦𝕥𝕠𝕣𝕚𝕒𝕝𝕤 YouTube Channel + 𝕊𝕔𝕠𝕥𝕥's + 𝔻𝕒𝕧𝕚𝕕's Wcoding courses and tips
+also used ChatGPT to disable audio and activate autoplay for YouTube videos, for better user experience. 
+However could not activate subtitles due to video incompatibility
+ANIMISTA 
+https://ianlunn.github.io/Hover/
+
+-->
+    <!-- ////////////////////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////////////////////// -->
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container-body">
+
+
+
+        <div id="statistics">
+            <figure>
+
+                <figcaption class="typing-figcaption">
+                    Want to be updated on any news or event at SPPS?
+                </figcaption>
+                <br><br><br><br>
+                <input id="email" placeholder="Enter your email to receive our newsletter">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="submit-email" type="submit">SUBMIT</button>
+                <br><br><br>
+                <input class="radioyesno" type="radio" name="agree-disagree"> &nbsp;&nbsp;&nbsp;I want to receive weekly
+                emails</input>
+                <br><br>
+                <input class="radioyesno" type="radio" name="agree-disagree"> &nbsp;&nbsp;&nbsp;I want to receive
+                monthly emails</input>
+            </figure>
+        </div>
+
+
+
+
+
+
+        <nav>
+            <ul id="navbar">
+                <a href="Main.html" target="_blank">
+                    <li class="navbar">Core Values&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </li>
+                </a>
+                <a href="#target-1">
+                    <li class="navbar">Mission </li>
+                </a>
+                <a href="#target-2">
+                    <li class="navbar longer-li">Application Values &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>
+                </a>
+                <a href="#target-3">
+                    <li class="navbar longer-li">Director Message &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>
+                </a>
+                <a href="#sectionvideo">
+                    <li class="navbar longer-li">Graduation Video&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                        &nbsp;
+                        &nbsp; </li>
+                </a>
+                <a href="#statistics">
+                    <li class="navbar buzz">Newsletter&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </li>
+                </a>
+                <a href="contact-us.html" target="_blank">
+                    <li class="navbar">Contact Us&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </li>
+                </a>
+            </ul>
+
+
+
+
+        </nav>
+        <div id="parallax-world-of-ugg">
+
+            <section>
+
+                <div class="title">
+                    <h3 class="tracking-in-expand">Saint Paul Preparatory</h3>
+                    <h1 class="text-focus-in">MAIN</h1>
+                </div>
+            </section>
+
+            <section>
+                <div class="parallax-one shutter-out-vertical" id="bg-parallax-one">
+                    <h2 id="titlewelcome" class="typing-title">Welcome to SPPS </h2>
+                    <label for="opendoorscheck"></label>
+                    <input type="checkbox" id="opendoorscheck">
+                    <!--  -->
+                    <!-- OTHER POP UP SCREEN-->
+                    <div id="registeropendoors">
+                        <figure>
+
+                            <figcaption class="typing-figcaption">
+                                Do you want to register for our open doors? Please fill-in the contact form below.
+                            </figcaption>
+                            <br><br><br><br>
+                            <input id="email" placeholder="Enter your email to receive our newsletter">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="submit-email" type="submit">SUBMIT</button>
+                            <br><br><br>
+
+                            <form action="#" method="POST">
+                                <p>
+                                    <label for="first-name">First Name:</label>&nbsp;&nbsp;
+                                    <input type="text" name="firstName" id="email" placeholder="Clem..." autofocus>
+
+                                </p>
+                                <p>
+                                    <label for="age">Age :</label>&nbsp;&nbsp;
+                                    <input id="email" type="number" min="0" max="99" value="7" maxlength="2">
+                                </p>
+
+                                <p>
+                                    <label for="phone">Phone Number :</label>&nbsp;&nbsp;
+                                    <select name="country" id="" maxlength="2">
+
+                                        <optgroup label="Europe">
+                                            <option value="GR">GR (+30)</option>
+                                            <option value="France">FR (+32)</option>
+                                            <option value="UK">UK (+44)</option>
+                                            <option value="France">DE (+49)</option>
+
+                                        </optgroup>
+
+                                        <optgroup label="Asia">
+                                            <option value="Korea">KO (+82)</option>
+                                            <option value="France">FR (+32)</option>
+                                            <option value="USA">USA (+1)</option>
+                                            <option value="Korea">UK (+44)</option>
+                                        </optgroup>
+                                    </select>
+                                </p>
+
+                                <p>
+                                    <label for="description">Tell us about yourself :</label>&nbsp;&nbsp;
+                                    <br>
+                                    <br>
+                                    <textarea id="email" name="description" id="description" cols="10" rows="10"
+                                        placeholder="I am...">My name is...</textarea>
+                                </p>
+
+                                <p>
+                                    <label>Gender</label> :&nbsp;&nbsp;
+                                    <label for="male">Male</label>&nbsp;&nbsp;
+                                    <input class="radioyesno" type="radio" name="gender" id="male" value="male">
+                                    <label for="female">Female</label>&nbsp;&nbsp;
+                                    <input class="radioyesno" type="radio" name="gender" id="female" value="female">
+
+                                </p>
+                                <p>
+
+                                    <input class="radioyesno" type="checkbox" name="termsOfUse" id="termsOfUse">
+                                    <label for="termsOfUse">Do you agree to the Terms of Use</label>
+                                    <br>
+                                    <input class="radioyesno" type="checkbox" name="newsletter" id="newsletter">
+                                    <label for="newsletter">Sign me up for the newsletter</label>
+                                </p>
+                                <br>
+                                <input id="submit" type="submit" value="Register Now">
+                            </form>
+
+                        </figure>
+                    </div>
+                    <!-- ////////////////////////// -->
+                    <!-- MIRAE HOVER AND AUDIO -->
+                    <!-- ////////////////////////// -->
+
+                    <audio id="miraeaudio" preload="auto" id="audio" controls>
+                        <source src="Assets/Mirae beurk.m4a">
+                        <source src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.ogg">
+                    </audio>
+
+                    <img id="business1" src="Assets/bsness_11-removebg-preview.png">
+                    <img id="bubble" src="Assets/Click_on_my_face-removebg-preview.png">
+                </div>
+
+            </section>
+            <!-- ////////////////////////// -->
+            <!-- PARAGRAPHS -->
+            <!-- ////////////////////////// -->
+            <section id="section1">
+                <div>
+                    <img id="logo" src="Assets/high quality logo.png">
+                </div>
+                <div class="block">
+
+                    <p id="target-1"><span class="first-character sc">S</span>PPS stands on a mission of independent
+                        learning. By
+                        providing a rigorous curriculum in a caring atmosphere touting small teacher-to-student ratio,
+                        students grow up to be independent thinkers. It is our foremost goal to prepare students in
+                        every
+                        aspect so that they can develop the confidence necessary for success in their next stage of
+                        learning.
+
+                    </p>
+                    <p class="line-break margin-top-10"></p>
+                    <p class="margin-top-10"> SPPS teachers are experts with hearts. Teachers are passionate about
+                        getting
+                        to know each and every student. These strong bonds add to a vibrant community life and lead to
+                        exceptional learning in our classrooms and beyond.
+
+                        All students, regardless of their interests or future pursuits, are learning to develop their
+                        written and oral communication abilities for future success as scholars. SPPS incorporates
+                        various
+                        teaching methods to further hone these communication skills so that students are able to think
+                        critically and express themselves logically as mature learners.</p>
+                </div>
+            </section>
+
+            <section>
+
+
+                <div class="parallax-two">
+
+                </div>
+            </section>
+
+            <section>
+                <div class="block">
+                    <p id="target-2"><span class="first-character ny">W</span>e are glad you considering applying to
+                        Saint Paul
+                        Preparatory Seoul and hope you will find all the information you need to begin the process. Our
+                        Admissions Team attends to each applicant with great care to ensure a good fit between the
+                        student
+                        and SPPS and we will always be available to help you through the admissions process. This highly
+                        individualized process allows our Admissions Committee to carefully read each application and
+                        pay
+                        particular attention not just to a student’s academic development, but also to his or her
+                        personal
+                        attributes and intellectual promise.
+                    </p>
+                    <p class="line-break margin-top-10"></p>
+
+                </div>
+            </section>
+
+            <section>
+                <div class="parallax-three">
+
+                </div>
+            </section>
+
+            <section>
+                <div class="block">
+                    <p id="target-3"><span class="first-character atw">T</span>hank
+                        you for expressing interest in Saint Paul Preparatory Seoul.
+                        Our St. Paul Seoul is an innovative college preparatory institution specializing in challenging
+                        our
+                        students to become high achievers and life-long learners.
+
+                        We search for academically strong applicants who possess excellent personal character and
+                        leadership
+                        qualities, and desire to be holistic and highly successful global citizens of the 21st century.
+                        Saint Paul Preparatory Seoul is located in the Gangnam area of Seoul, South Korea.
+
+                        Our primary goal is to provide each student with a rigorous curriculum, high academic standards
+                        and
+                        expectations, and excellent preparation for entering the top universities in the United States,
+                        Canada, and Great Britain. Central to achieving this goal is continuous improvement of each
+                        student’s English speaking, writing, reading, and listening skills.
+
+                        All Saint Paul Preparatory US-based curriculum subjects are taught in English by highly
+                        qualified,
+                        native English speaking teachers.
+
+                        Saint Paul Preparatory Seoul is an important and worthwhile investment in your child’s future. I
+                        look forward to meeting with you to discuss our institution and the opportunities we can provide
+                        to
+                        your son or daughter. Thank you for expressing interest in our program.
+                        <br><br>
+                        Sincerely,
+
+                        Director of Saint Paul Preparatory Seoul
+                    </p>
+                    <p class="line-break margin-top-10"></p>
+
+                </div>
+            </section>
+
+        </div>
+
+
+
+
+        <!-- ////////////////////////// -->
+        <!-- FANCY HOVER EFFECT from CodePen, adjusted -->
+        <!-- ////////////////////////// -->
+
+        <div class="thumb">
+            <a href="#">
+                <span>Apply for Fall 2023</span>
+            </a>
+        </div>
+
+
+
+        <!-- ////////////////////////// -->
+        <!-- GRADUATION VIDEO HIDDEN CHECKBOXES-->
+        <!-- ////////////////////////// -->
+        <section id="sectionvideo">
+            <div class="container-lampe">
+
+
+                <label for="lampe"></label>
+                <input type="checkbox" id="lampe">
+                <h6 class="text-pop-up-bl">2021 Graduation video</h6>
+
+
+
+            </div>
+
+            <div class="desktop-relative">
+                <!-- <div>
+                <img id="desktop" src="/imac-screen-frame-computer-monitor-11563014610hpd2oigimt-removebg-preview.png">
+            </div> -->
+                <div>
+                    <label for="luminositycontrol"></label>
+                    <input type="checkbox" class="luminositycontrol">
+                    <label for="lockscreencheck"></label>
+                    <input type="checkbox" class="lockscreencheck">
+                    <img id="lockscreen" src="Assets/lock screen.gif">
+                    <img id="error" src="Assets/errorr.gif">
+                    <iframe class="youtube-screen-absolute" width="560" height="315"
+                        src="https://www.youtube.com/embed/OZKVKKjQfDM?autoplay=1$mute=1" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <audio id="virus" preload="auto" id="audio" controls>
+                        <source src="Assets/94FG6CS-computer-virus-loading-[AudioTrimmer.com].mp3">
+
+                    </audio>
+                </div>
+            </div>
+            <img id="business2" src="Assets/business_8-removebg-preview.png">
+            <img id="bubble2" src="Assets/Click_on_my_face__1_-removebg-preview.png">
+        </section>
+
+        <!-- ////////////////////////// -->
+        <!--SECTION SEPARATION, Source: https://www.shapedivider.app/-->
+        <!-- ////////////////////////// -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#273036" fill-opacity="1"
+                d="M0,288L34.3,288C68.6,288,137,288,206,256C274.3,224,343,160,411,133.3C480,107,549,117,617,122.7C685.7,128,754,128,823,122.7C891.4,117,960,107,1029,122.7C1097.1,139,1166,181,1234,213.3C1302.9,245,1371,267,1406,277.3L1440,288L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+            </path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#273036" fill-opacity="1"
+                d="M0,288L34.3,288C68.6,288,137,288,206,256C274.3,224,343,160,411,133.3C480,107,549,117,617,122.7C685.7,128,754,128,823,122.7C891.4,117,960,107,1029,122.7C1097.1,139,1166,181,1234,213.3C1302.9,245,1371,267,1406,277.3L1440,288L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+            </path>
+        </svg>
+
+
+        <!-- <article class="lightbox" id="statistics">
+            <figure>
+                <a href="#" class="close"></a>
+                <figcaption>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis enim,
+                    placerat id eleifend eu, semper vel sem.
+                </figcaption>
+            </figure>
+        </article> -->
+
+        <!-- ////////////////////////// -->
+        <!-- 3D FLIPPING CARDS, source: Kevin Powell preserve 3d-video -->
+        <!-- ////////////////////////// -->
+        <section class="finalsection">
+            <div class="wrapper">
+                <h1>Some figures...</h1>
+                <div class="cols">
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" id="first-card"
+                                style="background-image: url(/man\ woman.png); background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)">
+                                <div class="inner">
+                                    <p>Enrollment:</p>
+                                    <span>131</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>Male: 54% <br> Female: 46%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background-image: url(/group\ photo.jpg)">
+                                <div class="inner">
+                                    <p>Teaching Faculty</p>
+                                    <span>23</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>Faculty with advanced degrees: 54%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background-image: url(/nationality.webp)">
+                                <div class="inner">
+                                    <p>Nationality</p>
+                                    <span>Students</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>Korean: 97% <br> U.S & Canadian: 2% <br> Others: 1%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background-image: url(/teacher.webp)">
+                                <div class="inner">
+                                    <p>Student-to-Faculty-Ratio:</p>
+                                    <span>6:1</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>To ensure a premium education</p>
+                                </div>
+                            </div>
+
+                        </div>
+        </section>
+        <!-- ////////////////////////// -->
+        <!-- TRUTH ABOUT SPPS-->
+        <!-- ////////////////////////// -->
+
+        <section class="phone-handsection">
+            <img id="samsung-hand" src="Assets/Samsung_Mobile-Mockup-PNG_Image-removebg-preview.png">
+            <img id="phonebg" src="Assets/Good morning. (1).png" alt="phone bg">
+            <iframe id="truth" width="560" height="315"
+                src="https://www.youtube.com/embed/8WTH4CyLih8?autoplay=1&cc_load_policy=1&mute=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+        </section>
+
+
+        <!-- ////////////////////////// -->
+        <!-- FOOTER-->
+        <!-- ////////////////////////// -->
+        <footer>
+            <div>
+                <div class="logotitle">
+                    <img id="newlogo" src="Assets/logo new.png" alt="logo">
+                    <h2>SAINT PAUL PREPARATORY SEOUL</h2>
+                </div>
+                <!-- <p>CEEB Code</p> -->
+                <!-- <p>682371</p> -->
+
+                <p class="chairman">Chairman of the Board</p>
+                <p class="chairman"> Jong Ho Kim, M.A. Ed</p>
+            </div>
+            <br>
+            <div class="address1">
+                <div class=textfooter1>
+                    <p>High School Division</p>
+                    <p>Saint Paul Preparatory Seoul</p>
+                </div>
+                <br>
+                <ul>
+                    <li class="list-title" class="liadd">Admission Office</li>
+                    <li class="liadd">14-8, Seochojungang-ro 31-gil,</li>
+                    <li class="liadd">Seoch0-gu, Seoul Korea, 06593</li>
+                    <li class="liadd">Tel) +82-2-3486-2000</li>
+                    <li class="liadd">Fax) +82-2-23486-6789</li>
+                    <li class="liadd">www.stpaulseoul.org</li>
+                </ul>
+            </div>
+            <!-- add a separation line between each school -->
+            <br>
+            <div class="address2">
+                <div class="textfooter2">
+                    <p>Elementary to Middle School Division</p>
+                    <p>Seoul Academy</p>
+                </div>
+                <br>
+                <ul>
+                    <li class="list-title" class="liadd">Admission Office</li>
+                    <a
+                        href="https://www.google.com/search?q=14-8%2C+Seochojungang-ro+31-gil%2C+Seoch0-gu%2C+Seoul+Korea%2C+06593&rlz=1C1CHZN_enKR1020KR1020&oq=14-8%2C+Seochojungang-ro+31-gil%2C+Seoch0-gu%2C+Seoul+Korea%2C+06593&aqs=chrome..69i57j0i546l5j69i60.3127j0j4&sourceid=chrome&ie=UTF-8#">
+                        <li class="liadd">16, Samseong-ro 64-gil,</li>
+                        <li class="liadd">Gangnam-gu, Seoul Korea, 06191</li>
+                    </a>
+                    <li class="liadd">Tel) +82-2-554-1690</li>
+                    <li class="liadd">Fax) +82-2-562-0451</li>
+                    <li class="liadd">www.seoulacademy.org</li>
+                </ul>
+            </div>
+        </footer>
+        <div class="footer2">
+            <ul class="lastlist">
+
+                <li>Privacy &nbsp;&nbsp;&nbsp;Policy</li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li>CCTV&nbsp;&nbsp;&nbsp; Policy</li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li>FAQ</li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li>Aite&nbsp;&nbsp;&nbsp; Map</li>
+
+            </ul>
+            <div class="logoandcopy">
+                <div class="img">
+
+                    <img class="accre" id="ac" src="Assets/accreditation.webp">
+                    <img class="accre" id="iac" src="Assets/intlacac-logo-1.webp">
+
+                    <img class="accre" id="nacac" src="Assets/nacac-logo.png">
+                    <img class="accre" id="ncpsa" src="Assets/genie logo.png">
+
+                </div>
+                <p id="copyrights">COPYRIGHT © Saint Paul Preparatory Seoul. &nbsp;&nbsp;ALL RIGHTS RESERVED
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- TODO: make a contact us page with the form, double navbar and footer -->
