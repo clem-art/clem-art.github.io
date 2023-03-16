@@ -306,7 +306,7 @@ h1{
 
     .custom-shape-divider-top-1677245109 {
       position: absolute;
-      top: 4650px;
+      top: 4990px;
       left: 0;
       width: 100%;
       overflow: hidden;
@@ -505,6 +505,17 @@ h1{
       padding: 20px;
       background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
     }
+    p:not(#copyrights){
+      display: none;
+    }
+    .prettyDiv:hover p {
+      display: block;
+    }
+    .prettyDiv:hover{
+      background-color: lime;
+      color: #000;
+      background-image: none;
+    }
     /* SVG animation */
     /* #codingSvg {
       display: inline-block;
@@ -599,7 +610,7 @@ h1{
       width: 100px;
       border-radius: 50%;
       position: absolute;
-      margin-top: 1500px;
+      margin-top: 1700px;
       animation: bubble 1s alternate infinite;
 
     }
@@ -1307,7 +1318,7 @@ h1
     </div>
     </div>
   </section>
-<audio id="myAudio" src="assets/bubbleEffect.wav"></audio>
+<audio id="myAudio" src="/assets/bubbleEffect.wav"></audio>
 <img id="bubble1" class="bubbles" src="bubbleBg.jpg" alt="bubble in the background" onclick="document.getElementById('myAudio').play();document.getElementById('bubble1').style.display = 'none';">
 <img id="bubble2" class="bubbles" src="bubbleBg2.jpg" alt="bubble in the background" onclick="document.getElementById('myAudio').play();document.getElementById('bubble2').style.display = 'none';"> 
 <img id="bubble3" class="bubbles" src="heartbubble.jpg" alt="bubble in the background" onclick="document.getElementById('myAudio').play();document.getElementById('bubble3').style.display = 'none';">  
