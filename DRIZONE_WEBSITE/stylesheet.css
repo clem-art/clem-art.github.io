@@ -6,6 +6,7 @@ body {
 
 header {
   position: fixed;
+  z-index: 2;
   background-color: #000;
   color: #fff;
   padding: 10px;
@@ -13,7 +14,12 @@ header {
   width: 100%;
   filter: drop-shadow(0 0 0.75rem rgb(48, 8, 123));
 }
+.middleTitle{
+  text-align: center;
+  width: 80%;
+  margin-left: -8%;
 
+}
 header h1 {
   margin: 0;
 }
@@ -39,6 +45,7 @@ nav li {
 }
 .snsLogo{
   width: 50px;
+  filter: drop-shadow( #6c5f7d 5px 5px 2px);
 }
 .snsLogo:hover {
 filter: drop-shadow(0 0 0.75rem rgb(192, 192, 193));
@@ -90,10 +97,16 @@ h6{
  }
 }
 
+  img, .products{
+    width: 500px;
+   
+  }
+
 @media only screen and (max-width: 1267px) {
   nav {
     display: none;
   }
+ 
 }
 
 nav a {
@@ -126,16 +139,56 @@ html, body, main{
 footer>h6{
   color: white;
 }
-
+#blueprint{
+  filter: drop-shadow(black 10px 10px 10px);
+ 
+}
 #products h2 {
   margin-bottom: 20px;
 }
-#aboutUs{
+#aboutUs, .aboutUs{
   margin-bottom: 100px;
   width: 80%;
+  text-align: center;
+}
+.marking{
+  background-color: #2a0960;
+  color: #fff;
+  -webkit-text-stroke: 0.6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding: 3px;
+  margin: 5px;
+  line-height: 30px;
+  border-radius: 5px;
+
+}
+.referencing{
+  opacity: 0.5;
+ text-align: left;
+}
+strong {
+  position: relative;
+  color:aliceblue;
 }
 
+strong::before {
+  /* Highlight color */
+  background-color: #2a0960;
+ 
 
+  content: "";
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 80%;
+  left: -2px;
+  bottom: 0;
+  z-index: -1;
+ 
+}
+.aboutUs{
+  text-align: left;
+}
 #products ul {
   list-style: none;
 }
@@ -156,7 +209,7 @@ h3{
   display: block;
   height: 150px;
   margin-bottom: 10px;
-  width: 100%;
+ 
 }
 
 #products li p {
@@ -184,7 +237,10 @@ h3{
 .footer a:hover {
   color: #000;
 }
-
+#moldBathroom{
+  border-radius: 10%;
+ 
+}
 .footer .social-icons {
   display: flex;
   justify-content: center;
@@ -248,9 +304,7 @@ footer {
 * {
   cursor: url("Assets/cursor.png"), auto;
 }
-.products {
-  width: 100%;
-}
+
 #team {
   margin-right: 90%;
 }
@@ -262,5 +316,74 @@ h2 {
   padding-left: 10%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+.name{
+  font-weight: 500;
+  text-align: left;
+  margin-top: -90px;
+  color: #2a0960;
+}
+.quotes{
+  font-size: 30px;
+  font-weight: 900;
+}
 
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 100px;
+  margin-left: 6%;
+  box-shadow: #000000 1px 1px 40px;
+  margin-top: 100px;  
+}
+#wetLogo{
+  opacity: 0.3;
+  background-color: #706e6e;
+}
+#laminar{
+  margin-left: -5%;
+}
+.order img {
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 10px;
+  filter: drop-shadow(black 1px 1px 40px);
+}
+
+.order h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.order p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.order .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.order button {
+  background-color: #2a0960;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  filter: drop-shadow(black 10px 10px 10px);
+}
+
+.order button:hover {
+  background-color: #0056b3;
+}
 /*   ====================RESPONSIVE  NAVBAR =========================  */
