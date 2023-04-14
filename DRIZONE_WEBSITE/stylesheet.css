@@ -20,10 +20,20 @@ header {
   margin-left: -8%;
 
 }
+.centeredTitle{
+  margin-left: 15%;
+}
+.superCenteredTitle{
+  margin-left: 30%;
+}
 header h1 {
   margin: 0;
 }
-
+a{
+  text-decoration: none;
+  color: #3c2365;
+  -webkit-text-stroke: 1px;
+}
 nav ul {
   position: fixed;
   list-style: none;
@@ -106,7 +116,9 @@ h6{
   nav {
     display: none;
   }
- 
+ .product{
+  display: flex;
+ }
 }
 
 nav a {
@@ -216,7 +228,7 @@ h3{
   font-size: 0;
 }
 .footer {
-  background-color: #f2f2f2;
+  background-color: #040404;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -267,7 +279,7 @@ footer {
   background: linear-gradient(
     112.1deg,
     rgb(32, 38, 57) 11.4%,
-    rgb(48, 8, 123) 70.2%
+    rgb(34, 5, 88) 70.2%
   );
   height: 100%;
   color: white;
@@ -304,7 +316,10 @@ footer {
 * {
   cursor: url("Assets/cursor.png"), auto;
 }
-
+#aiLegend{
+  margin-left: 30%;
+  margin-top: -60px;
+}
 #team {
   margin-right: 90%;
 }
@@ -326,7 +341,12 @@ h2 {
   font-size: 30px;
   font-weight: 900;
 }
-
+#incentive{
+  margin-top: 100px;
+  text-shadow: #2a0960 10px 8px 10px;
+  color: #2a0960;
+  -webkit-text-stroke: 1px;
+}
 .order {
   display: flex;
   flex-direction: column;
@@ -368,7 +388,7 @@ h2 {
 .order .price {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #007bff;
+  color: #2a0960;
   margin-bottom: 10px;
 }
 

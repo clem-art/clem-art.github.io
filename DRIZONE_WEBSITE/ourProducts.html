@@ -17,6 +17,8 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 100px;
+  margin-left: 7%;
+  box-shadow: #000000 1px 1px 40px;
 }
 
 .product img {
@@ -39,12 +41,12 @@
 .product .price {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #007bff;
+  color: #8000ff;
   margin-bottom: 10px;
 }
 
 .product button {
-  background-color: #007bff;
+  background-color: #8000ff;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -54,7 +56,10 @@
 }
 
 .product button:hover {
-  background-color: #0056b3;
+  background-color: rgb(3, 0, 3);
+}
+@media only screen and (max-width: 1267px) {
+  .product{}
 }
     </style>
   </head>
@@ -80,19 +85,55 @@
       <section id="banner">
         
       </section>
-      <h1>ABOUT US</h1>
+      <h1>OUR PRODUCTS</h1>
       <p id="aboutUs" class="aboutUs">
-        Our team brings together diverse talents, including <b>design</b>, <b>marketing</b>, and <b>frontend development</b>. Together, along with a team of engineers  and <b>key partners</b> we work seamlessly to create innovative solutions for our clients. <br><br><mark class="marking"> &nbsp;&nbsp;We aim to fully eradicate the floor-&nbsp; &nbsp; &nbsp;humidity issue that is one of the main&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;causes of water damage repairs.&nbsp;&nbsp;&nbsp;&nbsp;</mark><br><br> So give it a Dry!
+        Combining multiple <b>state-of-the-art technologies</b>, DRIZONE guarantees you great <b>floor hygiene</b> and the total eradication of <b>bathroom floor humidity</b>  
+        <br><br> So give it a Dry!
 
       </p>
 
-      <div class="product">
-        <img src="Assets/prototyping1.jpg" alt="Product Image">
+      <div class="order">
+        <img src="Assets/bathroom.png" alt="Product Image">
         <h2>DRIZONE Built-in version</h2>
         <p>The very first bathroom floor-drying technology. For enquiries and bathroom measures contact us anytime</p>
+        <br>
         <span class="price">$6000</span>
+        <br>
         <button>Add to Cart</button>
+        <br>
+</div>
+        <div class="order">
+          <img src="Assets/bathroom.png" alt="Product Image">
+          <h2>DRIZONE Add-up version</h2>
+          <p>The very first bathroom floor-drying technology. For enquiries and bathroom measures <a href="mailto:drizone0.2@gmail.com">contact us</a> anytime</p>
+          <br>
+          <span class="price">$6000</span>
+          <br>
+          <button>Add to Cart</button>
+          <br>
+        </div>
       </div>
       
+      <footer id="footer" class="footer">
+     
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/drizone-floormates-0aba92271/"><img class="snsLogo" src="Assets/linkedinLogo.svg"></a>
+          <a href="mailto:drizone0.2@gmail.com"><img class="snsLogo" src="Assets/gmailLogo.svg"></a>
+          <a href="https://www.youtube.com/channel/UCI42LAR7Qd7fkhfrdTlRfoA"><img class="snsLogo" src="Assets/youtubeLogo.svg"></a>
+         
+        </div>
+        <div class="disclaimer">
+          <h6>
+           
+            &copy;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Copyright © 2023 DRIZONE By the Floormates. <br /> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;All rights
+            reserved.
+          </h6>
+        </div>
+        <img id="team" src="Assets/team.png" alt="teammates" />
+      </footer>
+      <script defer src="javascript.js"></script>
+    </body>
+  </html>
+  
    
 
