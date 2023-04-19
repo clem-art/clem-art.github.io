@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -14,22 +14,20 @@ header {
   width: 100%;
   filter: drop-shadow(0 0 0.75rem rgb(48, 8, 123));
 }
-.middleTitle{
+/* middleTitle = paragraphs, centeredTitle = H4 titles */
+/* .middleTitle {
   text-align: center;
   width: 80%;
   margin-left: -8%;
-
 }
-.centeredTitle{
+.centeredTitle {
   margin-left: 15%;
-}
-.superCenteredTitle{
-  margin-left: 30%;
-}
+} */
+
 header h1 {
   margin: 0;
 }
-a{
+a {
   text-decoration: none;
   color: #3c2365;
   -webkit-text-stroke: 1px;
@@ -53,23 +51,37 @@ nav li {
   margin-top: 75px;
   -webkit-text-stroke: 1px;
 }
-.snsLogo{
+.snsLogo {
   width: 50px;
-  filter: drop-shadow( #6c5f7d 5px 5px 2px);
+  filter: drop-shadow(#6c5f7d 5px 5px 2px);
 }
 .snsLogo:hover {
-filter: drop-shadow(0 0 0.75rem rgb(192, 192, 193));
+  filter: drop-shadow(0 0 0.75rem rgb(192, 192, 193));
 }
-
+/* adapt content when on phones */
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 100px;
+  margin-left: 6%;
+  box-shadow: #000000 1px 1px 40px;
+  margin-top: 100px;
+}
 @media only screen and (max-width: 600px) {
-
   p,
   #banner {
     width: 100%;
     align-items: center;
     text-align: center;
   }
-  .products{
+  
+  /* products = images */
+  .products {
     width: 100%;
     margin-left: -6%;
   }
@@ -78,19 +90,18 @@ filter: drop-shadow(0 0 0.75rem rgb(192, 192, 193));
     padding-top: 70px;
     margin-bottom: 30px;
   }
-.snsLogo{
-  width: 100%;
-  align-items: center;
-}
-.social-icons{
-  margin-left: 19%;
-  margin-top: 30px;
-}
-h6{
-  font-size: 10px;
-  text-align: center;
-
-}
+  .snsLogo {
+    width: 100%;
+    align-items: center;
+  }
+  .social-icons {
+    margin-left: 19%;
+    margin-top: 30px;
+  }
+  h6 {
+    font-size: 10px;
+    text-align: center;
+  }
   #mainLogo {
     margin-left: 19%;
   }
@@ -99,26 +110,94 @@ h6{
   }
   h1 {
     padding-top: 0;
-    
   }
- 
- footer{
-  width: 100%;
- }
+
+  footer {
+    width: 100%;
+  }
 }
 
-  img, .products{
+@media only screen and (min-width: 1268px){
+  img,
+  .products {
     width: 500px;
-   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 100%; */
   }
+  #blueprintDiv{
+    overflow: hidden;
+    width: 500px;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 32%;
+  }
+  #blueprint{
+    transition: 0.3s linear;
+    overflow: hidden;
+    
+  }
+  #blueprint:hover{
+   transform: scale(3);
+   overflow: hidden;
+  }
+  figure.zoom {
+    background-position: 50% 50%;
+    position: relative;
+    margin: 150px auto;
+    border: 5px solid white;
+    box-shadow: -1px 5px 15px black;
+    height: 300px;
+    width: 500px;
+    overflow: hidden;
+    cursor: zoom-in;
+  }
+  figure.zoom img:hover {
+    opacity: 0;
+  }
+  figure.zoom img {
+    transition: opacity 0.5s;
+    display: block;
+    width: 100%;
+  }
+  p{
+    font-size: 20px;
+  }
+  h4{
+    font-size: 30px;
+    text-align: center;
+  }
+  h5{
+    font-size: 20px;
+    text-align: center;
+  }
+  #productBoxes{
+    display: flex;
+    justify-content: center;
+  }
+  #emailHover:hover{
+    cursor: pointer;
+  }
+  #customerService{
+    margin-top: 30px;
+  }
+  .wetLogo{
+    width: 100%;
+    height: 500px;
+  }
+}
 
+
+/* adapt the content when on desktop */
 @media only screen and (max-width: 1267px) {
   nav {
     display: none;
   }
- .product{
-  display: flex;
- }
+  .product {
+  }
+  #inspirationContainer {
+  }
 }
 
 nav a {
@@ -139,31 +218,32 @@ nav a:hover {
   text-align: center;
 }
 
-html, body, main{
+html,
+body,
+main {
   overflow-x: hidden;
 }
-
 
 #banner p {
   font-size: 1.2em;
 }
 
-footer>h6{
+footer > h6 {
   color: white;
 }
-#blueprint{
+#blueprint {
   filter: drop-shadow(black 10px 10px 10px);
- 
 }
 #products h2 {
   margin-bottom: 20px;
 }
-#aboutUs, .aboutUs{
+#aboutUs,
+.aboutUs {
   margin-bottom: 100px;
   width: 80%;
   text-align: center;
 }
-.marking{
+.marking {
   background-color: #2a0960;
   color: #fff;
   -webkit-text-stroke: 0.6px;
@@ -173,21 +253,19 @@ footer>h6{
   margin: 5px;
   line-height: 30px;
   border-radius: 5px;
-
 }
-.referencing{
+.referencing {
   opacity: 0.5;
- text-align: left;
+  text-align: left;
 }
 strong {
   position: relative;
-  color:aliceblue;
+  color: aliceblue;
 }
 
 strong::before {
   /* Highlight color */
   background-color: #2a0960;
- 
 
   content: "";
   position: absolute;
@@ -196,9 +274,8 @@ strong::before {
   left: -2px;
   bottom: 0;
   z-index: -1;
- 
 }
-.aboutUs{
+.aboutUs {
   text-align: left;
 }
 #products ul {
@@ -211,17 +288,16 @@ strong::before {
   width: 40%;
 }
 
-#products li{
+#products li {
   margin-top: 0;
 }
-h3{
+h3 {
   margin-top: 30px;
 }
 #products li img {
   display: block;
   height: 150px;
   margin-bottom: 10px;
- 
 }
 
 #products li p {
@@ -249,9 +325,8 @@ h3{
 .footer a:hover {
   color: #000;
 }
-#moldBathroom{
+#moldBathroom {
   border-radius: 10%;
- 
 }
 .footer .social-icons {
   display: flex;
@@ -316,10 +391,10 @@ footer {
 * {
   cursor: url("Assets/cursor.png"), auto;
 }
-#aiLegend{
+/* #aiLegend {
   margin-left: 30%;
   margin-top: -60px;
-}
+} */
 #team {
   margin-right: 90%;
 }
@@ -331,42 +406,31 @@ h2 {
   padding-left: 10%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.name{
+.name {
   font-weight: 500;
   text-align: left;
   margin-top: -90px;
   color: #2a0960;
 }
-.quotes{
+.quotes {
   font-size: 30px;
   font-weight: 900;
 }
-#incentive{
+#incentive {
   margin-top: 100px;
   text-shadow: #2a0960 10px 8px 10px;
   color: #2a0960;
   -webkit-text-stroke: 1px;
 }
-.order {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 300px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 100px;
-  margin-left: 6%;
-  box-shadow: #000000 1px 1px 40px;
-  margin-top: 100px;  
-}
-#wetLogo{
+
+.wetLogo {
   opacity: 0.3;
   background-color: #706e6e;
 }
-#laminar{
+#laminar {
   margin-left: -5%;
 }
+/* order = 2 products divs */
 .order img {
   width: 100%;
   max-width: 250px;
