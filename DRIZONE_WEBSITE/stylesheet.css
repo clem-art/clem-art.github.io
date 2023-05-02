@@ -79,11 +79,28 @@ nav li {
     align-items: center;
     text-align: center;
   }
-  
+  #productBoxes{
+    width: 80vw;
+  }
+  h4, h5{
+    text-align: center;
+    
+  }
+  .middleTitle{
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    max-width: 300px;
+    
+  }
+  ul{
+    padding: 0;
+  }
+ 
   /* products = images */
   .products {
     width: 100%;
-    margin-left: -6%;
+    /* margin-left: -6%; */
   }
   #mainVideo {
     width: 350px;
@@ -184,8 +201,9 @@ nav li {
   }
   .wetLogo{
     width: 100%;
-    height: 500px;
+    height: 600px;
   }
+ 
 }
 
 
@@ -194,10 +212,7 @@ nav li {
   nav {
     display: none;
   }
-  .product {
-  }
-  #inspirationContainer {
-  }
+
 }
 
 nav a {
@@ -427,9 +442,7 @@ h2 {
   opacity: 0.3;
   background-color: #706e6e;
 }
-#laminar {
-  margin-left: -5%;
-}
+
 /* order = 2 products divs */
 .order img {
   width: 100%;
