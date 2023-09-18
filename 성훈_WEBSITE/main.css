@@ -1,0 +1,163 @@
+
+::-webkit-scrollbar{
+    width: 20px;
+   
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    color: rgb(49, 113, 192); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    height: 20px;
+  }
+html{
+    overflow-x: hidden;
+}
+
+body{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+
+#section1{
+    background-image: url(photo/beach.jpg);
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+    cursor: url(photo/rovCursor.png), auto;
+}
+.section2{
+    background-color:rgb(0, 0, 0);
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+    
+}
+.certif{
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 100px;
+    transition: 0.3s ease-in-out;
+}
+.certif:hover{
+    transform: scale(2);
+}
+#certif2:hover > #certif1{
+    backdrop-filter: blur(100%);
+}
+#certif1:hover > #certif2{
+    backdrop-filter: blur(100%);
+}
+.section3{
+    background-color: aliceblue;
+    background-image: url(photo/diverFace.jpg);
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+    cursor: url(photo/diverCursor.png), auto;
+}
+h5{
+    color: rgb(255, 254, 253);
+}
+.divSec3{
+    background-color: black;
+    opacity: 70%;
+    height: 750px;
+    width: 600px;
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 20%;
+    transition: 0.3s ease-in-out;
+}
+.divSec3:hover{
+    opacity: 85%;
+}
+.wrapper3{
+display: flex;
+justify-content: space-between;
+
+}
+#linkedinLogo{
+    width:20px;
+}
+h2{
+    margin-top: 200px;
+    color:rgb(3, 5, 11);
+    font-size: 60px;
+}
+h3{
+    font-size: 35px;
+}
+#linkedin{
+    font-size: 25px;
+    text-decoration: none;
+    -webkit-text-stroke: 1px;
+    color: rgb(49, 113, 192);
+}
+.navbar>a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 10px 5px 9px rgb(130, 128, 128);
+    transition: ease 0.3s;
+    -webkit-text-stroke: 1px;
+    margin-top: 30px;
+}
+.navbar>a:hover{
+    color:rgb(84, 216, 245);   
+}
+.navbar{
+font-size: 20px;
+display: flex;
+justify-content: space-around;
+
+}
+#diver{
+    width: 300px;
+    margin-top: 500px;
+    border-radius: 10%;
+    
+}
+#diverDiv{
+}
+.custom-shape-divider-bottom-1694774172 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1694774172 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 140px;
+}
+
+.custom-shape-divider-bottom-1694774172 .shape-fill {
+    fill: black;
+}
+
+
+
+
+  
+
+
+
+
+  
